@@ -1,0 +1,134 @@
+#booklet{
+    background: url('../img/bg1.png') no-repeat top left, 
+    url('../img/bg2.png') no-repeat top 400px left,
+    url('../img/bg3.png') no-repeat top right,
+    url('../img/bg4.png') no-repeat top 400px right;
+}
+h2 span{font-size: .8em;}
+.accordion h2{margin-left: 0;}
+.modal-body .grafismo{
+    margin: 0 auto;
+    width: 80%;
+}
+.painel button{
+    border: none;
+    position: relative;
+}
+.painel button.visitado::after {
+    background: url('../../assets/images/check.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    content: '';
+}
+.bt-adm-cientifica{
+    background: url("../img/bt1.png") no-repeat;
+    width: 245px;
+    height: 126px;
+}
+.bt-adm-cientifica:hover{background: url("../img/bt1_hv.png") no-repeat;}
+.bg-podcast.taylor .audio-player::after{
+    display: none;
+}
+.bg-podcast.taylor .audio-player::before{
+    background: url('../img/podcast_taylor.png') no-repeat;
+    width: 400px;
+    height: 230px;
+    left: -100px;
+}
+.marcador li{
+    list-style: none;
+    background: url('../img/marcador.png') no-repeat;
+    padding-left: 40px;
+    min-height: 31px;
+    margin-bottom: 5px;
+}
+.bg-podcast.ford .audio-player::after{
+    display: none;
+}
+.bg-podcast.ford .audio-player::before{
+    background: url('../img/podcast_ford.png') no-repeat;
+    width: 400px;
+    height: 295px;
+    left: -100px;
+    bottom: 0;
+}
+.bt-teoria-classica{
+    background: url("../img/bt2.png") no-repeat;
+    width: 245px;
+    height: 126px;
+}
+.bt-teoria-classica:hover{background: url("../img/bt2_hv.png") no-repeat;}
+.bg-podcast.fayol .audio-player::after{
+    display: none;
+}
+.bg-podcast.fayol .audio-player::before{
+    background: url('../img/podcast_fayol.png') no-repeat;
+    width: 400px;
+    height: 295px;
+    left: -100px;
+    bottom: 0;
+}
+.bg-podcast.mayo .audio-player::after{
+    display: none;
+}
+.bg-podcast.mayo .audio-player::before{
+    background: url('../img/podcast_mayo.png') no-repeat;
+    width: 400px;
+    height: 295px;
+    left: -100px;
+    bottom: 0;
+}
+.bt-adm-humanista{
+    background: url("../img/bt3.png") no-repeat;
+    width: 245px;
+    height: 126px;
+}
+.bt-adm-humanista:hover{background: url("../img/bt3_hv.png") no-repeat;}
+.marcador.alvo li{
+    list-style: none;
+    background: url('../img/marcador_alvo.png') no-repeat;
+    padding-left: 40px;
+    min-height: 33px;
+    margin-bottom: 5px;
+}
+.bt-teoria-neoclassica{
+    background: url("../img/bt4.png") no-repeat;
+    width: 245px;
+    height: 126px;
+}
+.bt-teoria-neoclassica:hover{background: url("../img/bt4_hv.png") no-repeat;}
+.bt-modelo-japones{
+    background: url("../img/bt5.png") no-repeat;
+    width: 245px;
+    height: 126px;
+}
+.bt-modelo-japones:hover{background: url("../img/bt5_hv.png") no-repeat;}
+.bt-adm-atuais{
+    background: url("../img/bt6.png") no-repeat;
+    width: 245px;
+    height: 126px;
+}
+.bt-adm-atuais:hover{background: url("../img/bt6_hv.png") no-repeat;}
+
+@media screen and (max-width: 1800px){
+    #booklet{
+        background-size: 18%;
+    }
+}
+@media screen and (max-width: 1300px){
+    #booklet{background: none;}
+    .bg-podcast p{max-width: 50%;}
+}
+@media screen and (max-width: 800px){
+    .bg-podcast p{max-width: 100%;}
+}
+@media screen and (max-width: 580px){
+    .bg-podcast::after{display: none;}
+    .accordion-button, .accordion-button:not(.collapsed){padding-left: 15px;}
+    .bg-podcast.ford .audio-player::before{height: 232px;}
+    .bg-podcast.fayol .audio-player::before{height: 250px;}
+    .bg-podcast.mayo .audio-player::before{bottom: -45px;}
+}

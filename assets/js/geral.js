@@ -11,7 +11,7 @@ window.addEventListener('load', function(){
 
     $('.preloader').fadeOut(300);
 
-    $('.botao').click(function(){
+    $('.painel > button').click(function(){
       $(this).addClass('visitado');
     });
     

@@ -19,7 +19,7 @@
     top: -50px;
     right: -50px;
 }
-.bg-podcast > div::after{
+.bg-podcast > div:first-child::after{
     content:'';
     background: url('../images/ico_podcast.svg') no-repeat;
     height: 86px;
