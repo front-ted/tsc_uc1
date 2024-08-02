@@ -25,7 +25,11 @@
         <!-- Estilos do template -->
         <link rel="stylesheet" href="../assets/css/cores.css">
         <link rel="stylesheet" href="../assets/css/template.css">
-    
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="arrasta_solta/game-custom.css">
+        <!--Estilo da página-->
+        <link rel="stylesheet" href="css/custom.css">
     </head>
     <body>
         <!-- Preloader OBRIGATÓRIO -->
@@ -63,7 +67,7 @@
                     <li><a href="#titulo9">Visão, missão e valores</a></li>
                     <li><a href="#titulo10">O papel do profissional de secretariado</a></li>
                     <li><a href="#titulo11">A comunicação</a></li>
-                    <li><a href="#titulo11">Encerramento</a></li>
+                    <li><a href="#titulo12">Encerramento</a></li>
                 </ul>
             </nav>
         </div>
@@ -71,18 +75,684 @@
         <section id="booklet">      
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
-                <div class="container pagina">
-                    <h2 id="titulo1">Cultura organizacional: conceitos e elementos</h2>
+                <div class="pagina">
+                    <div class="bloco claro">
+                        <div class="container">
+                            <h2>Cultura organizacional: conceitos e elementos</h2>
+                            <h3 id="titulo1">Introdução</h3>
+                            <p>Para que você, futuro técnico em secretariado, possa entender o universo da cultura organizacional, é importante acompanhar as mudanças que estão ocorrendo no mundo globalizado das organizações. </p>
+                            <p>Neste contexto, é fundamental considerar temas como: modelo de trabalho, linguagem visual, crenças, adaptabilidade, empregabilidade e características das gerações. </p>
+                            <p>Portanto, neste material, você compreenderá a importância, as formas de desenvolvimento dentro de uma empresa, os conceitos e os elementos da cultura organizacional, bem como o papel a ser exercido como profissional para contribuir na melhoria do desempenho organizacional.</p>
+                        </div>
+                    </div>
+                    <div class="bloco escuro">
+                        <div class="container">
+                            <h3 id="titulo2">Conceito de cultura organizacional</h3>
+                            <p>A partir da década de 1980, devido à mudança na forma de gestão dos administradores, o interesse pelo estudo da cultura organizacional aumentou significativamente.  </p>
+                            <p>Segundo Chiavenato (2005), a cultura organizacional influencia diretamente a vida das pessoas, determinando as suas atitudes nas relações interpessoais desenvolvidas no trabalho e o resultado obtido por cada colaborador.</p>
+                            <p class="my-2 ps-5">A cultura organizacional não é algo que se possa tocar. Ela não é percebida ou observada em si mesma, mas por meio de seus efeitos e suas consequências. Nesse sentido, lembra um <i>iceberg</i>. Na parte superior, acima do nível da água, estão os aspectos visíveis e superficiais que são observados nas organizações e que são decorrência da sua cultura. (Chiavenato, 2005) </p>
+                            <h4 id="titulo3" class="mt-5 mb-3">Elementos para análise de uma cultura organizacional</h4>
+                            <p>Segundo os autores Deal e Kennedy (<i>apud</i> Crozatti, 1998), após entrevistas com diversos gestores, definiu-se cultura organizacional como “o jeito que fazemos as coisas por aqui”. Essa definição abrange tanto o comportamento das pessoas quanto a forma de operação da empresa com relação aos serviços e aos produtos.  </p>
+                            <p>Os principais influenciadores da cultura organizacional, segundo Bio (1996), Catelli (1997) e Schein (1992), citados por Crozatti (1998), são os fundadores e as lideranças das empresas, devido às suas relações de poder na gestão das organizações, variando de acordo com o tamanho e a estrutura.  </p>
+                            <p>Os clientes, a comunidade e a tecnologia também são grandes influenciadores da cultura organizacional de uma empresa. </p>
+                            <p>A cultura é formada dentro de um processo em que as pessoas interagem com o ambiente, absorvendo, assim, princípios e valores que ditarão seus comportamentos e suas ações. Para entender de que maneira a cultura pode ser influenciada por tais aspectos, é preciso conhecer os elementos que a compõem. </p>
+                            <p>Veja alguns elementos que compõem a cultura organizacional e que demonstram como a organização pensa.</p>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="painel1 no-print">
+                                <button type="button" class="bt-comunicacao" data-bs-toggle="modal" data-bs-target="#modal-comunicacao">
+                                    <span class="sr-only">Comunicação</span>
+                                </button>
+                                <button type="button" class="bt-valores" data-bs-toggle="modal" data-bs-target="#modal-valores">
+                                    <span class="sr-only">Valores</span>
+                                </button>
+                                <button type="button" class="bt-normas" data-bs-toggle="modal" data-bs-target="#modal-normas">
+                                    <span class="sr-only">Normas</span>
+                                </button>
+                                <button type="button" class="bt-herois" data-bs-toggle="modal" data-bs-target="#modal-herois">
+                                    <span class="sr-only">Heróis</span>
+                                </button>
+                                <button type="button" class="bt-crencas" data-bs-toggle="modal" data-bs-target="#modal-crencas">
+                                    <span class="sr-only">Crenças e pressupostos</span>
+                                </button>
+                                <button type="button" class="bt-ritos" data-bs-toggle="modal" data-bs-target="#modal-ritos">
+                                    <span class="sr-only">Ritos, rituais e cerimônias</span>
+                                </button>
+                                <button type="button" class="bt-historias" data-bs-toggle="modal" data-bs-target="#modal-historias">
+                                    <span class="sr-only">Histórias e mitos</span>
+                                </button>
+                                <button type="button" class="bt-linguagem" data-bs-toggle="modal" data-bs-target="#modal-linguagem">
+                                    <span class="sr-only">Linguagem</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="modal fade" id="modal-comunicacao" tabindex="-1" aria-labelledby="modal-comunicacao" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-comunicacao">Comunicação</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>A comunicação é o processo de troca de informações. Ela é essencial para a vida da organização.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-valores" tabindex="-1" aria-labelledby="modal-valores" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-valores">Valores</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Os valores são definidos principalmente pelo fundador da organização e expressam o que a empresa valoriza em termos de comportamento, área, padrões etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-normas" tabindex="-1" aria-labelledby="modal-normas" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-normas">Normas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>As normas definem limites entre os comportamentos esperados e aceitos e os comportamentos punidos e não aceitos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-herois" tabindex="-1" aria-labelledby="modal-herois" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-herois">Heróis</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Os heróis são aquelas pessoas que realizaram feitos ou que representam de maneira firme a organização.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-crencas" tabindex="-1" aria-labelledby="modal-crencas" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-crencas">Crenças e pressupostos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>As crenças e os pressupostos abrangem aquilo que a organização acredita, o que se crê como verdade. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-ritos" tabindex="-1" aria-labelledby="modal-ritos" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-ritos">Ritos, rituais e cerimônias</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Os ritos, os rituais e as cerimônias são atividades criadas e realizadas pela organização com um fim definido.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-historias" tabindex="-1" aria-labelledby="modal-historias" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-historias">Histórias e mitos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>As histórias são narrativas baseadas em fatos reais. Já os mitos utilizam-se de um fato real, distorcendo-o para atender a alguma necessidade da organização. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-linguagem" tabindex="-1" aria-labelledby="modal-linguagem" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-linguagem">Linguagem</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Símbolos da linguagem verbal que expressam a cultura da empresa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p>Os elementos citados definem, por meio da cultura, como a organização se comporta e se expressa. Segundo o americano Schein (<i>apud</i> Crozatti, 1998), eles ainda são divididos em níveis na cultura organizacional.</p>
+                        </div>
+                    </div>
+                    <div class="bloco claro">
+                        <div class="container">
+                            <h3 id="titulo4">Níveis da cultura organizacional</h3>
+                            <p>O americano Edgard H. Schein, Ph.D. em psicologia social pela Harvard, publicou em 2009 uma de suas principais obras, o livro <i>Cultura organizacional e liderança</i>. Segundo o autor, existem alguns elementos que compõem a cultura organizacional, destacados em três níveis. São eles:</p>
+                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                            <div class="accordion" id="accordion1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Artefatos 
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>O nível referente aos artefatos é o mais superficial, o mais visível, pois compreende as coisas que cada um vê, sente e ouve em uma organização. Os rituais, os símbolos, as estruturas, as histórias, os heróis, os lemas e as cerimônias são exemplos de artefatos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Valores compartilhados
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>O nível referente aos valores compartilhados compreende os valores relevantes e importantes para as pessoas que fazem parte da organização. Aqui estão as metas, as filosofias e as estratégias que governam o comportamento das pessoas, a razão pela qual elas fazem o que fazem.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Pressuposições básicas
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>O nível referente às pressuposições básicas é o último e mais profundo nível de uma cultura organizacional. Ele compreende os elementos inconscientes da organização, como sentimentos, crenças, percepções, pensamentos, aquilo que as pessoas acreditam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>O professor e pesquisador de comunicação Idalberto Chiavenato (2005) compara a cultura organizacional com um grande <i>iceberg</i>.</p>
+                            <figure class="my-5">
+                                <div class="figure-img">
+                                    <img class="img-fluid d-block borda-colorida mx-auto mb-4" src="img/fig1.png">
+                                </div>
+                                <figcaption class="figure-caption text-center">
+                                    <i>Iceberg</i> da cultura organizacional<br>
+                                    Fonte: Adaptado de Siteware (c2024)
+                                </figcaption>
+                                <p class="sr-only no-print">A imagem representa um iceberg dividido em duas partes. Na parte acima da água, está escrito “aspectos formais e visíveis”; na parte abaixo da água, está escrito “aspectos informais e invisíveis”.</p>
+                            </figure>
+                            <p>Conforme Chiavenato (2005), a cultura é como um <i>iceberg</i>: o que é visível, acima do nível da água, constitui a menor parte (aspectos formais e visíveis); já abaixo do nível da água, está o que a maioria das pessoas não consegue enxergar (aspectos informais e invisíveis).  </p>
+                            <p>Os artefatos, que ficam acima do nível da água, fazem parte dos aspectos formais e visíveis, ou seja, tudo o que pode ser visto, como planos, indicadores, normas escritas, políticas, métodos, procedimentos, objetivos, estrutura organizacional e tecnologia adotada. Os aspectos formais e visíveis orientam uma organização.  </p>
+                            <p>Já os valores compartilhados e as pressuposições básicas, que ficam abaixo do nível da água, fazem parte dos aspectos informais e invisíveis, isto é, tudo o que não pode ser visto, como valores, crenças, emoções, cultura e forma como acontecem os relacionamentos. Os aspectos informais e invisíveis movem a organização.</p>
+                        </div>
+                    </div>
+                    <div class="bloco escuro">
+                        <div class="container">
+                            <h3 id="titulo5">O que é cultura organizacional na prática?</h3>
+                            <p>Cultura organizacional são as convicções compartilhadas pelos membros de uma organização, a personalidade, o caráter de cada um.  </p>
+                            <p>O objetivo principal da cultura de uma organização é a introdução do fator humano dentro das necessidades da empresa por meio de lideranças que conduzirão os colaboradores em seu desenvolvimento profissional. Assim, há um aprimoramento de suas competências, o que impacta de forma positiva o desempenho organizacional.  </p>
+                            <p>A cultura de uma organização caracteriza-se pela forma como a empresa vê os colaboradores, verificando, por exemplo, se necessitam de controle, se são confiáveis. Os gestores que buscam inovação com relação às necessidades dos colaboradores contribuem para o sucesso da cultura e do clima organizacional, pois o crescimento das organizações depende do crescimento dos colaboradores na empresa.  </p>
+                            <div class="grafismo">
+                                <div class="destaque borda-colorida">
+                                    <p>O desafio das organizações é disponibilizar uma estrutura que seja capaz de ajudar os gestores na tarefa de formar os colaboradores, despertando nestes o prazer de trabalhar na organização.</p>
+                                </div>
+                            </div>
+                            <p>A cultura representa a parte sentimental, cujo propósito é dar aos membros um sentimento de pertencimento e identidade, criando nos colaboradores um compromisso com os valores e as crenças da organização. Os valores e as crenças são transmitidos às pessoas que trabalham na empresa, criando, assim, uma identidade.  </p>
+                            <p>O colaborador que assimila os valores e as crenças de forma pessoal influencia a cultura da organização. O conjunto de valores pessoais de cada ser humano que trabalha na empresa, somado aos valores transmitidos pela organização, é o que forma a cultura de uma organização. </p>
+                            <p>Ainda, cabe mencionar que existe uma relação entre cultura organizacional e clima organizacional dentro do contexto da gestão de pessoas.</p>
+                        </div>
+                    </div>
+                    <div class="bloco claro">
+                        <div class="container">
+                            <h3 id="titulo6">Qual é a diferença entre cultura organizacional e clima organizacional?</h3>
+                            <p>A cultura organizacional representa os valores da empresa. Já o clima refere-se ao que acontece no dia a dia da empresa, ou seja, é o que os colaboradores pensam da organização (por exemplo: o que acham da empresa, das condições de trabalho, da comunicação entre os colaboradores e os gestores etc.).  </p>
+                            <p>O clima organizacional está ligado à satisfação das necessidades das pessoas que trabalham na organização. Esse clima poderá ser saudável ou não, dependendo da forma como os colaboradores se sentem com relação à organização onde trabalham. O clima refere-se às questões motivacionais do ambiente interno da organização.  </p>
+                            <p>Chiavenato (2010) aponta seis processos de gestão de pessoas, os quais têm a finalidade de interação da equipe. Veja quais são eles.</p>
+                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                            <div class="painel2 no-print">
+                                <button type="button" class="bt-agregar" data-bs-toggle="modal" data-bs-target="#modal-agregar">
+                                    <span class="sr-only">Agregar</span>
+                                </button>
+                                <button type="button" class="bt-aplicar" data-bs-toggle="modal" data-bs-target="#modal-aplicar">
+                                    <span class="sr-only">Aplicar</span>
+                                </button>
+                                <button type="button" class="bt-recompensar" data-bs-toggle="modal" data-bs-target="#modal-recompensar">
+                                    <span class="sr-only">Recompensar</span>
+                                </button>
+                                <button type="button" class="bt-desenvolver" data-bs-toggle="modal" data-bs-target="#modal-desenvolver">
+                                    <span class="sr-only">Desenvolver</span>
+                                </button>
+                                <button type="button" class="bt-manter" data-bs-toggle="modal" data-bs-target="#modal-manter">
+                                    <span class="sr-only">Manter</span>
+                                </button>
+                                <button type="button" class="bt-monitorar" data-bs-toggle="modal" data-bs-target="#modal-monitorar">
+                                    <span class="sr-only">Monitorar</span>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modal-agregar" tabindex="-1" aria-labelledby="modal-agregar" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-agregar">Agregar</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>O processo de agregar pessoas envolve as atividades de recrutamento e seleção, ou seja, encontrar novas pessoas para a empresa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-aplicar" tabindex="-1" aria-labelledby="modal-aplicar" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-aplicar">Aplicar</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>A ideia desse processo é orientar e acompanhar o desempenho das pessoas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-recompensar" tabindex="-1" aria-labelledby="modal-recompensar" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-recompensar">Recompensar</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>A recompensa (remunerações, benefícios etc.) é utilizada como um incentivo para as pessoas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-desenvolver" tabindex="-1" aria-labelledby="modal-desenvolver" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-desenvolver">Desenvolver</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>O processo de desenvolver pessoas preocupa-se com os treinamentos, as capacitações, o desenvolvimento e a aprendizagem dos colaboradores.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-manter" tabindex="-1" aria-labelledby="modal-manter" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-manter">Manter</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>O objetivo deste processo é manter as pessoas em uma organização, dando a elas as condições de trabalho necessárias.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-monitorar" tabindex="-1" aria-labelledby="modal-monitorar" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-monitorar">Monitorar</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>O objetivo deste processo é acompanhar o desenvolvimento e, consequentemente, os resultados de cada colaborador.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>O interessante é que cada um desses processos tem como objetivo manter os colaboradores motivados e satisfeitos, para que, assim, eles possam atingir os resultados esperados pela organização. </p>
+                            <p>Nesse sentido, é fundamental observar as gerações que atuam nas empresas, levando em consideração seus diversos perfis. Isso porque a empresa deve estruturar as equipes de modo que todos sintam-se respeitados e engajados. </p>
+                            <p>E você? Conhece algumas características de cada geração?</p>
+                            <div class="box-atividade no-print" aria-hidden="true">
+                                <p class="titulo-ativ">Observe e arraste as características para o campo da geração que você identifica ser correspondente:</p>
+                                <div id="content-game">
+                                    <div class="container-fluid game-body no-print" style="padding:0;">
+                                        <div class="row">
+                                            <div id="slots" class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                                        <div class="game-titulo">
+                                                            <p>Geração <i>baby boomer</i> (nascidos entre 1946 e 1964)</p>
+                                                        </div>
+                                                        <div id="slot-1" class="slot">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                                        <div class="game-titulo">
+                                                            <p>Geração X (nascidos entre 1965 e 1980)</p>
+                                                        </div>
+                                                        <div id="slot-2" class="slot">
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                                        <div class="game-titulo">
+                                                            <p>Geração Y (também conhecida como <i>millennials</i>, nascidos entre 1981 e 1996)</p>
+                                                        </div>
+                                                        <div id="slot-3" class="slot">
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                                        <div class="game-titulo">
+                                                            <p>Geração Z (nascidos entre 1997 e 2012)</p>
+                                                        </div>
+                                                        <div id="slot-4" class="slot">
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                
+                                            <div id="cardPile" class="game-itens-container">
+                                                <div id="card-1" class="card" data-target="slot-1">
+                                                    Valoriza a estabilidade na empresa
+                                                </div>
+                                                
+                                                <div id="card-3" class="card" data-target="slot-2">
+                                                    Foco na independência financeira
+                                                </div>
+                                                
+                                                <div id="card-5" class="card" data-target="slot-3">
+                                                    Busca por satisfação no trabalho  
+                                                </div>
+                                                <div id="card-6" class="card" data-target="slot-3">
+                                                    Pessoas mais independentes  
+                                                </div>
+                                                <div id="card-2" class="card" data-target="slot-1">
+                                                    Respeito à hierarquia  
+                                                </div>
+                                                <div id="card-4" class="card" data-target="slot-2">
+                                                    Busca por adaptação e empregabilidade
+                                                </div>  
+                                                <div id="card-7" class="card" data-target="slot-4">
+                                                    Facilidade com tecnologia  
+                                                </div>
+                                                <div id="card-8" class="card" data-target="slot-4">
+                                                    Dificuldade na concentração 
+                                                </div>                                         
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                           
+                                
+                                <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check"></i> Parabéns! </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/arrasta_solta/resposta_pos.svg" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p>Muito bem, resposta correta!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger">
+                                                <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Atenção! </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/arrasta_solta/resposta_neg.svg" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p>Tente novamente.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sr-only print">
+                                <div class="table-responsive">
+                                    <table class="text-left align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th class="w-25">Geração <i>baby boomer</i> (nascidos entre 1946 e 1964)</th>
+                                                <th class="w-25">Geração X (nascidos entre 1965 e 1980)</th>
+                                                <th class="w-25">Geração Y (também conhecida como <i>millennials</i>, nascidos entre 1981 e 1996)</th>
+                                                <th class="w-25">Geração Z (nascidos entre 1997 e 2012) </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Valoriza a estabilidade na empresa</p>
+                                                    <p>Respeito à hierarquia</p>
+                                                </td>
+                                                <td>
+                                                    <p>Foco na independência financeira</p>
+                                                    <p>Busca por adaptação e empregabilidade</p>
+                                                </td>
+                                                <td>
+                                                    <p>Busca por satisfação no trabalho </p>
+                                                    <p>Pessoas mais independentes </p>
+                                                </td>
+                                                <td>
+                                                    <p>Facilidade com tecnologia </p>
+                                                    <p>Dificuldade na concentração </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Observando esses diferentes perfis apresentados, as organizações precisam criar diversos meios para que a cultura seja difundida. Além disso, devem cuidar para que todos da equipe se sintam pertencentes à organização.</p>
+                        </div>
+                    </div>
+                    <div class="bloco escuro">
+                        <div class="container">
+                            <h3 id="titulo7">Como a cultura de uma organização é desenvolvida</h3>
+                            <p>Os desafios organizacionais e o forte ambiente competitivo dos dias atuais levam as organizações a valorizar a cultura organizacional, pois, caso uma empresa não consiga manter seus funcionários motivados, provavelmente ela também não será bem-sucedida.  </p>
+                            <p>Quando os colaboradores estão desmotivados, cada um pensa somente em si mesmo, o que aumenta a competitividade negativamente e faz com que as pessoas busquem melhores oportunidades.  </p>
+                            <p>A cultura de uma empresa é constituída por cada pessoa que entra para o time, mas, ao final, as pessoas com maior influência são quem dão uma direção, como aconteceu com Steve Jobs, na Apple.  </p>
+                            <p>Os fundadores e os sócios da empresa precisam ter uma visão clara de onde a organização quer chegar, pois, na criação de uma cultura organizacional, eles têm um papel primordial. É muito importante também que as pessoas mais influentes na organização estejam alinhadas a eles.</p>
+                        </div>
+                    </div>
+                    <div class="bloco claro">
+                        <div class="container">
+                            <h3 id="titulo8">O ambiente de trabalho deve ser prazeroso</h3>
+                            <p>Para criar uma cultura organizacional efetiva, as pessoas mais influentes precisam direcionar o time, ou seja, fazer com que a equipe lembre o rumo que as ações estão tomando, a necessidade, caso haja, de fazer alguma mudança de rota ou não. Todos precisam saber o que está acontecendo.  </p>
+                            <p>É muito importante também que a escolha do novo membro da equipe seja criteriosa, para que ele consiga se adaptar tranquilamente à cultura organizacional, pois, caso uma pessoa entre no time com ideias e práticas diferentes dos demais membros, as coisas podem não dar certo.  </p>
+                            <p>Outro aspecto importante para criar uma cultura organizacional efetiva é o fato de que as pessoas influenciadoras devem ser capazes de mostrar para todos do time a missão da empresa e o que ela está fazendo para alcançá-la. O colaborador precisa abraçar a visão de futuro da empresa. </p>
+                            <p>Portanto, é muito importante que o funcionário conheça a visão, a missão e os valores da empresa, para que ele saiba, assim, por que a organização existe, qual é o propósito dela e qual é o caminho a ser traçado para que ela atinja os objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="bloco escuro">
+                        <div class="container">
+                            <h3 id="titulo9">O que são a visão, a missão e os valores de uma empresa?</h3>
+                            <p>Veja na figura o que são a visão, a missão e os valores de uma empresa. </p>
+                            <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-evenly no-print my-5" aria-hidden="true">
+                                <img src="img/card_missao.png" class="img-fluid">
+                                <img src="img/card_visao.png" class="img-fluid mx-3 my-3">
+                                <img src="img/card_valores.png" class="img-fluid">
+                            </div>
+                            <div class="sr-only print">
+                                <p><b>Missão</b></p>
+                                <p>É o motivo de a empresa existir.</p>
+                                <p><b>Visão</b></p>
+                                <p>Dá um objetivo concreto e inspirador que determina o futuro que a equipe deseja alcançar.</p>
+                                <p><b>Valores</b></p>
+                                <p>São as crenças, os princípios e as atitudes que darão uma identidade para a organização, disseminando, assim, a cultura organizacional.</p>
+                            </div>
+                            <p>As pessoas que trabalham na empresa precisam estar alinhadas aos princípios e às crenças definidos, para que consigam ter atitudes e tomar decisões que estejam de acordo com a cultura organizacional. Uma empresa só terá sucesso se valorizar e investir na cultura organizacional.  </p>
+                            <p>Sendo assim, no momento da contratação de novos profissionais, é fundamental que a empresa deixe claro qual é a sua cultura, pois, dessa forma, novos colaboradores poderão analisar se o seu perfil se encaixa, ou não, no que foi apresentado. Igualmente, a empresa também será capaz de avaliar se o candidato está alinhado à cultura organizacional divulgada. </p>
+                            <p>Uma outra questão importante que impacta a cultura das organizações é o modelo de trabalho, pois, após a pandemia de covid-19, diversas empresas passaram a atuar no modelo híbrido e no modelo remoto, além do presencial. </p>
+                            <p>Observe as características de cada modelo de trabalho. </p>
+                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                            <div class="painel3 d-flex flex-wrap flex-md-nowrap justify-content-between my-5 no-print">
+                                <button type="button" class="bt-presencial" data-bs-toggle="modal" data-bs-target="#modal-presencial">
+                                    <span class="sr-only">Presencial</span>
+                                </button>
+                                <button type="button" class="bt-remoto" data-bs-toggle="modal" data-bs-target="#modal-remoto">
+                                    <span class="sr-only">Remoto</span>
+                                </button>
+                                <button type="button" class="bt-hibrido" data-bs-toggle="modal" data-bs-target="#modal-hibrido">
+                                    <span class="sr-only">Híbrido</span>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modal-presencial" tabindex="-1" aria-labelledby="modal-presencial" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-presencial">Presencial</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>As atividades são realizadas no local físico determinado pela empresa. </li>
+                                                <li>A comunicação e a interação entre os colaboradores são diretas, pois estão juntos no mesmo ambiente. </li>
+                                                <li>A empresa disponibiliza uma estrutura física e determina um horário de expediente que deve ser seguido por todos os colaboradores. </li>
+                                                <li>Em muitas organizações, há uma supervisão mais próxima do colaborador, pois está no mesmo ambiente que seu gestor.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-remoto" tabindex="-1" aria-labelledby="modal-remoto" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-remoto">Remoto</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>Os colaboradores realizam suas atividades fora da empresa, podendo trabalhar de suas casas ou outros locais. </li>
+                                                <li>A comunicação entre as pessoas ocorre por meio virtual, usando as ferramentas disponibilizadas pela empresa. </li>
+                                                <li>Geralmente, há um horário mais flexível, de acordo com o ramo da organização. </li>
+                                                <li>É um modelo de trabalho que requer muita disciplina, pois o colaborador não tem uma supervisão direta das suas atividades. Além disso, as pessoas que atuam neste modelo devem ter foco para manter a produtividade de suas atividades.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-hibrido" tabindex="-1" aria-labelledby="modal-hibrido" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-hibrido">Híbrido</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>O modelo híbrido é uma combinação das características dos modelos presencial e remoto. </li>
+                                                <li>Possibilita que os colaboradores alternem os dias da semana em que trabalharão remoto e presencial. </li>
+                                                <li>A comunicação pode acontecer presencialmente e de forma virtual. </li>
+                                                <li>O modelo híbrido também fornece uma maior flexibilidade do que o modelo presencial. </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Nesse sentido, é crucial entender como cada trabalhador consegue se encaixar nesses novos formatos de trabalho, diferentes do presencial, inclusive porque esses formatos exigem maior disciplina e organização por parte do colaborador. </p>
+                            <p>Além disso, é possível observar diferentes culturas em empresas mais tradicionais e empresas mais inovadoras.  </p>
+                            <p>Por exemplo, em uma empresa tradicional de consultoria jurídica, a cultura pode ser centrada na hierarquia e na tradição, com ênfase na formalidade e na <i>expertise</i> técnica. Nesse exemplo, as decisões importantes são tomadas pelos sócios em reuniões presenciais, e a comunicação é principalmente vertical, seguindo uma cadeia de comando estabelecida.</p>
+                            <p>Já em uma empresa mais voltada à inovação, uma <i>startup</i> de tecnologia, por exemplo, que desenvolve aplicativos móveis, pode existir uma cultura organizacional caracterizada pela informalidade, transparência e experimentação. Os colaboradores são encorajados a contribuir com ideias em reuniões abertas e a tomar decisões em equipe, promovendo uma cultura de inovação e aprendizado contínuo. </p>
+                        </div>
+                    </div>
+                    <div class="bloco claro">
+                        <div class="container">
+                            <h3 id="titulo10">O papel do profissional de secretariado na cultura organizacional</h3>
+                            <p>O trabalho do profissional de secretariado evoluiu muito nas últimas décadas. Esse profissional vem ganhando posições de destaque, contribuindo e participando do desenvolvimento da cultura organizacional das empresas. Além disso, ele relaciona-se com toda a empresa, pois está diretamente envolvido nos processos de gestão. Logo, conhecer e entender o propósito da organização no mercado são ações primordiais.</p>
+                            <div class="grafismo">
+                                <div class="destaque borda-colorida">
+                                    <img src="img/destaque_secretariado.png" class="img-fluid d-block mx-auto my-3 no-print" aria-hidden="true">
+                                    <p>O profissional de secretariado somente terá resultados positivos e conseguirá desenvolver um bom trabalho se conhecer a empresa onde atua (o histórico, a evolução, os processos de trabalho, bem como as formas de comunicação e as pessoas).</p>
+                                </div>
+                            </div>
+                            <p>Os gestores e os diretores buscam atingir os objetivos e as metas nas empresas, mas estão muito ocupados em seus afazeres, não sobrando tempo para influenciar os seus liderados quanto à cultura organizacional – mesmo contando com diversos coordenadores disponíveis. É nesse ponto que entra o profissional de secretariado, que faz um elo entre o gestor e a sua equipe, influenciando a cultura organizacional, por meio de uma comunicação eficiente, e também o gerenciamento de conflitos.   </p>
+                            <p>O profissional de secretariado tem o poder de influenciar. Maerker (1999) discorre sobre a condução da informação, enfatizando que sempre haverá o risco de interpretações incorretas ou distorções, as quais podem causar prejuízos significativos para a liderança e até mesmo para a empresa. O profissional de secretariado que exerce essa influência de forma proativa traz um retorno positivo não somente para a empresa, mas também para ele mesmo.  </p>
+                            <p>Maerker (1999) ainda destaca que a função desse profissional consiste em fazer com que as informações cheguem ao executivo da maneira mais clara possível. O profissional de secretariado é um facilitador de informação.  </p>
+                            <p>Chiavenato (2005) alerta para como a informação é conduzida, pois ela precisa chegar ao destino correto e de forma correta, já que é fundamental para tomar decisões.  </p>
+                            <p>O profissional de secretariado colabora para a cultura gerenciando os conflitos. Segundo Chiavenato (2005), a gestão de conflitos significa administrar as divergências.</p>
+                            <div class="grafismo">
+                                <div class="destaque borda-colorida">
+                                    <img src="img/destaque_gestao_conflitos.png" class="img-fluid d-block mx-auto my-3">
+                                    <p>Além disso, o profissional de secretariado precisa ter habilidade para conduzir os conflitos na organização, pois está envolvido com todos os níveis hierárquicos da empresa.</p>
+                                </div>
+                            </div>
+                            <p>Ele exerce um papel muito importante na empresa, pois tem poder de influência no comportamento organizacional, trabalhando nas relações interpessoais, agregando pessoas e evitando conflitos. Para que ele possa desempenhar bem todas as suas funções, é preciso buscar conhecimento continuamente. </p>
+                        </div>
+                    </div>
+                    <div class="bloco escuro">
+                        <div class="container">
+                            <h3 id="titulo11">A comunicação é um diferencial na profissão de secretariado</h3>
+                            <p>A globalização causou muitas mudanças no cotidiano das pessoas, o que fez com que a comunicação se tornasse um ponto essencial para que uma organização tenha sucesso.   </p>
+                            <p>Existem várias formas de comunicação nas organizações: a escrita, que é a mais comum (por exemplo, circulares, memorandos etc.), e a oral, que faz parte da rotina da organização e fundamenta os relacionamentos (por exemplo, contatos diretos, telefonemas, reuniões etc.). Outra forma de comunicação é a do ambiente físico, como o modo de se vestir das pessoas.</p>
+                            <div class="grafismo">
+                                <div class="destaque borda-colorida">
+                                    <img src="img/destaque_comuicacao.png" class="img-fluid d-block mx-auto my-3">
+                                    <p>A comunicação é fundamental para as empresas, pois ela indica a forma como estas se relacionam com o ambiente, implementam estratégias organizacionais, desenvolvem a imagem da empresa, formam a cultura organizacional, entre outros aspectos.</p>
+                                </div>
+                            </div>
+                            <p>Na prática da administração de empresas, as teorias organizacionais sofreram muitas transformações, e o secretário tem encontrado espaço privilegiado na assessoria, levando também a uma atualização de perfil.  </p>
+                            <p>O profissional de secretariado que pretende atuar em organizações deve buscar eficiência e eficácia na comunicação, pois assume a função de auxiliar no assessoramento, passando a ser responsável por várias atividades organizacionais – desde organizar reuniões, viagens e agenda até assessorar projetos, apresentar relatórios e pareceres e representar o executivo em negociações e eventos.</p>
+                            <div class="grafismo">
+                                <div class="destaque borda-colorida">
+                                    <p>A cultura é algo constantemente construído e reconstruído. Nesse processo, a comunicação surge como principal elemento gerador de transformações, pois é por meio dela que as pessoas que fazem parte da vida organizacional se relacionam e transformam a vida de quem as cerca, mudando, ao mesmo tempo, a cultura organizacional (Restreppo, 1995). </p>
+                                    <p>Sem uma comunicação eficiente, o profissional de secretariado não terá sucesso em sua função. </p>
+                                </div>
+                            </div>
+                            <p>O profissional de secretariado exerce um papel muito importante na comunicação, pois ele é a ponte entre os diversos níveis da empresa, assessorando, coordenando informações e administrando relacionamentos e conflitos. Ele é um agente facilitador na transmissão de informações.</p>
+                            <img src="img/destaques_transmissor_informacoes.png" class="img-fluid d-block mx-auto my-3">
+                            <p>Sendo assim, contribui muito para a realização da cultura organizacional, já que se comunica com todos na organização.  </p>
+                            <p>Segundo as autoras Bíscoli e Lotte (2006), a comunicação organizacional está em todas as atribuições do profissional de secretariado.  </p>
+                            <p>Mazulo e Liendo (2010) descrevem as habilidades e as rotinas de um profissional de secretariado, destacando a grande responsabilidade que ele tem na empresa. Para os autores, dentre todas as rotinas e todos os conhecimentos técnicos que cabem a esse profissional, o sucesso está no conhecimento e no desenvolvimento dos seus conhecimentos técnicos, além da coordenação de serviços e pessoas. A comunicação e o relacionamento interpessoal são muito importantes para gerar resultados positivos na organização. </p>
+                        </div>
+                    </div>
+                    <div class="bloco claro">
+                        <div class="container">
+                            <h3 id="titulo12">Encerramento</h3>
+                            <div class="grafismo">
+                                <div class="destaque borda-colorida icone conclusao">
+                                    <p>Neste material, foram abordadas a importância da cultura organizacional e a forma como ela se desenvolve dentro de uma empresa. Também foram vistos os conceitos e os elementos, os níveis, os aspectos visíveis e invisíveis e o papel do profissional de secretariado na contribuição da cultura organizacional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
                 </div>
             </section>
             <!-- Paginação-->
-            <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
                 <ul class="pagination">
     
                 </ul>
-            </footer>   
+            </footer>    -->
         </section>
         <!-- Bootstrap JavaScript Libraries -->
         <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -94,12 +764,19 @@
         <script src="../assets/js/splide.min.js"></script>
         <!--Prog'n'roll - barra de progresso conforme rola a página-->
         <script src="../assets/js/prognroll.min.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="arrasta_solta/game-custom.js"></script>
         <!--Scripts gerais-->
         <script src="../assets/js/geral.js"></script>
 
         <script>
             $(function() {
                 $("body").prognroll();
+            });
+
+            $('.painel1 button, .painel2 button, .painel3 button').click(function(){
+                $(this).addClass('visto');
             });
         </script>
 

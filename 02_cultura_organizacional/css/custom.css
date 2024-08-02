@@ -1,0 +1,210 @@
+.bloco.claro{
+    background: url('../img/div2.png') no-repeat center bottom #92accd;
+    padding-bottom: 70px;
+}
+.bloco.escuro{
+    background: url('../img/div1.png') no-repeat center bottom #007792;
+    padding-bottom: 70px;
+}
+.bloco.escuro .container > h3, 
+.bloco.escuro  .container > h4, 
+.bloco.escuro  .container > p{color: #fff;}
+.painel1 {
+    position: relative;
+    width: 930px;
+    height: 790px;
+    margin: 50px auto;
+}
+.painel1 button{
+    border: none;
+}
+.bt-comunicacao{
+    background: url('../img/bt_comunicacao.png') no-repeat;
+    width: 261px;
+    height: 261px;
+}
+.bt-comunicacao:hover{background: url('../img/bt_comunicacao_hv.png') no-repeat;}
+.bt-comunicacao.visto{background: url('../img/bt_comunicacao_visto.png') no-repeat;}
+.bt-valores{
+    background: url('../img/bt_valores.png') no-repeat;
+    width: 261px;
+    height: 261px;
+}
+.bt-valores:hover{background: url('../img/bt_valores_hv.png') no-repeat;}
+.bt-valores.visto{background: url('../img/bt_valores_visto.png') no-repeat;}
+.bt-normas{
+    background: url('../img/bt_normas.png') no-repeat;
+    width: 224px;
+    height: 185px;
+}
+.bt-normas:hover{background: url('../img/bt_normas_hv.png') no-repeat;}
+.bt-normas.visto{background: url('../img/bt_normas_visto.png') no-repeat;}
+.bt-herois{
+    background: url('../img/bt_herois.png') no-repeat;
+    width: 184px;
+    height: 264px;
+}
+.bt-herois:hover{background: url('../img/bt_herois_hv.png') no-repeat;}
+.bt-herois.visto{background: url('../img/bt_herois_visto.png') no-repeat;}
+.bt-crencas{
+    background: url('../img/bt_crencas.png') no-repeat;
+    width: 238px;
+    height: 216px;
+}
+.bt-crencas:hover{background: url('../img/bt_crencas_hv.png') no-repeat;}
+.bt-crencas.visto{background: url('../img/bt_crencas_visto.png') no-repeat;}
+.bt-ritos{
+    background: url('../img/bt_ritos.png') no-repeat;
+    width: 236px;
+    height: 262px;
+}
+.bt-ritos:hover{background: url('../img/bt_ritos_hv.png') no-repeat;}
+.bt-ritos.visto{background: url('../img/bt_ritos_visto.png') no-repeat;}
+.bt-historias{
+    background: url('../img/bt_historias.png') no-repeat;
+    width: 224px;
+    height: 224px;
+}
+.bt-historias:hover{background: url('../img/bt_historias_hv.png') no-repeat;}
+.bt-historias.visto{background: url('../img/bt_historias_visto.png') no-repeat;}
+.bt-linguagem{
+    background: url('../img/bt_linguagem.png') no-repeat;
+    width: 243px;
+    height: 230px;
+}
+.bt-linguagem:hover{background: url('../img/bt_linguagem_hv.png') no-repeat;}
+.bt-linguagem.visto{background: url('../img/bt_linguagem_visto.png') no-repeat;}
+
+#accordion1 button{
+    background: #207893;
+}
+
+.painel2{
+    width: 430px;
+    height: 470px;
+    position: relative;
+    background: url('../img/gestao_pessoas.png') no-repeat center center;
+    margin: 50px auto;
+}
+.painel2 button{
+    position: absolute;
+    border: none;
+}
+.bt-agregar{
+    background: url('../img/bt_agregar.png') no-repeat;
+    width: 185px;
+    height: 114px;
+    left: 0;
+    top: 100px;
+}
+.bt-agregar:hover{background: url('../img/bt_agregar_hv.png') no-repeat;}
+.bt-agregar.visto{background: url('../img/bt_agregar_visto.png') no-repeat;}
+.bt-aplicar{
+    background: url('../img/bt_aplicar.png') no-repeat;
+    width: 184px;
+    height: 184px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.bt-aplicar:hover{background: url('../img/bt_aplicar_hv.png') no-repeat;}
+.bt-aplicar.visto{background: url('../img/bt_aplicar_visto.png') no-repeat;}
+.bt-recompensar{
+    background: url('../img/bt_recompensar.png') no-repeat;
+    width: 185px;
+    height: 114px;
+    right: 0;
+    top: 100px;
+}
+.bt-recompensar:hover{background: url('../img/bt_recompensar_hv.png') no-repeat;}
+.bt-recompensar.visto{background: url('../img/bt_recompensar_visto.png') no-repeat;}
+.bt-desenvolver{
+    background: url('../img/bt_desenvolver.png') no-repeat;
+    width: 185px;
+    height: 114px;
+    left: 0;
+    bottom: 100px;
+}
+.bt-desenvolver:hover{background: url('../img/bt_desenvolver_hv.png') no-repeat;}
+.bt-desenvolver.visto{background: url('../img/bt_desenvolver_visto.png') no-repeat;}
+.bt-manter{
+    background: url('../img/bt_manter.png') no-repeat;
+    width: 184px;
+    height: 182px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.bt-manter:hover{background: url('../img/bt_manter_hv.png') no-repeat;}
+.bt-manter.visto{background: url('../img/bt_manter_visto.png') no-repeat;}
+.bt-monitorar{
+    background: url('../img/bt_monitorar.png') no-repeat;
+    width: 185px;
+    height: 114px;
+    right: 0;
+    bottom: 100px;
+}
+.bt-monitorar:hover{background: url('../img/bt_monitorar_hv.png') no-repeat;}
+.bt-monitorar.visto{background: url('../img/bt_monitorar_visto.png') no-repeat;}
+
+.painel3{
+    background: url('../img/bg_painel.png') no-repeat center center;
+    background-size: contain;
+    padding-top: 100px;
+}
+.painel3 button{
+    height: 500px;
+    border: none;
+    margin-bottom: 30px;
+}
+.bt-presencial{
+    background: url('../img/bt_presencial.png') no-repeat;
+    width: 188px;
+}
+.bt-presencial:hover{background: url('../img/bt_presencial_hv.png') no-repeat;}
+.bt-presencial.visto{background: url('../img/bt_presencial_visto.png') no-repeat;}
+.bt-remoto{
+    background: url('../img/bt_remoto.png') no-repeat;
+    width: 274px;
+}
+.bt-remoto:hover{background: url('../img/bt_remoto_hv.png') no-repeat;}
+.bt-remoto.visto{background: url('../img/bt_remoto_visto.png') no-repeat;}
+.bt-hibrido{
+    background: url('../img/bt_hibrido.png') no-repeat;
+    width: 295px;
+}
+.bt-hibrido:hover{background: url('../img/bt_hibrido_hv.png') no-repeat;}
+.bt-hibrido.visto{background: url('../img/bt_hibrido_visto.png') no-repeat;}
+
+@media screen and (max-width: 1024px){
+    .painel1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: unset;
+        width: 100%;
+        height: auto;
+    }
+    .painel1 button{
+        margin: 30px;
+        position: unset !important;
+    }
+}
+@media screen and (max-width: 780px){
+    .painel3{
+        background: none; 
+        padding: 0;
+    }
+    .painel3 button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 480px){
+    .painel2{
+        transform: scale(.8);
+        margin: 5% -10%;
+    }
+}
