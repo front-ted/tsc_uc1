@@ -1,0 +1,39 @@
+.modal .grafismo{
+    width: 90%;
+    margin: 30px auto;
+}
+.destaque.gradiente li{color: #fff;}
+.modal .accordion{
+    width: 90%;
+    margin: 50px auto;
+}
+.destaque .bt-tooltip{color: #fff;}
+.painel1 {max-width: 860px;}
+.painel1 button{
+    border: none;
+    margin-bottom: 30px;
+    transition: all .4s;
+}
+.painel1 button:hover{
+    transform: scale(1.1);
+}
+.bt-planejamento{
+    background: url('../img/bt_planejamento_hv.png') no-repeat;
+    width: 300px;
+    height: 280px;
+}
+.bt-organizacao{
+    background: url('../img/bt_organizacao_hv.png') no-repeat;
+    width: 303px;
+    height: 288px;
+}
+.bt-direcao{
+    background: url('../img/bt_direcao_hv.png') no-repeat;
+    width: 285px;
+    height: 334px;
+}
+.bt-controle{
+    background: url('../img/bt_controle_hv.png') no-repeat;
+    width: 303px;
+    height: 283px;
+}

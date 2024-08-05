@@ -1,10 +1,19 @@
+.bloco.claro.inicial{
+    background: 
+    url('../img/bg3.png') no-repeat left bottom 20% / 15%,
+    url('../img/bg1.png') no-repeat right top 10% / 15%,
+    url('../img/bg2.png') no-repeat right bottom / 15%,
+    url('../img/div2.png') no-repeat center bottom;
+    background-color: #92accd;
+    padding-bottom: 120px;
+}
 .bloco.claro{
     background: url('../img/div2.png') no-repeat center bottom #92accd;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
 }
 .bloco.escuro{
     background: url('../img/div1.png') no-repeat center bottom #007792;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
 }
 .bloco.escuro .container > h3, 
 .bloco.escuro  .container > h4, 
@@ -178,6 +187,21 @@
 .bt-hibrido:hover{background: url('../img/bt_hibrido_hv.png') no-repeat;}
 .bt-hibrido.visto{background: url('../img/bt_hibrido_visto.png') no-repeat;}
 
+@media screen and (max-width: 1300px){
+    .bloco.claro.inicial{
+        background: 
+        url('../img/bg1.png') no-repeat right top 10% / 15%,
+        url('../img/bg2.png') no-repeat right bottom / 15%,
+        url('../img/div2.png') no-repeat center bottom;
+        background-color: #92accd;
+    }
+}
+@media screen and (max-width: 980px){
+    .bloco.claro.inicial{
+        background:url('../img/div2.png') no-repeat center bottom;
+        background-color: #92accd;
+    }
+}
 @media screen and (max-width: 1024px){
     .painel1 {
         display: flex;
