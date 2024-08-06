@@ -1,0 +1,81 @@
+body{background: none;}
+.bloco > .container{
+    border-radius: 70px;
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.59);
+    padding: 30px 50px;
+    background: #fff;
+}
+h2{margin-left: 0;}
+.bloco1{margin-bottom: -500px;}
+.bloco2{
+    background: url('../img/bg_conceito_organizacao.png') no-repeat top center;
+    padding-top: 700px;
+    margin-bottom: -500px;
+}
+.bloco3{
+    background: url('../img/bg_tipologia.png') no-repeat top center;
+    padding-top: 700px;
+    margin-bottom: -500px;
+}
+.painel1 button{
+    width: 297px;
+    height: 304px;
+    border: none;
+    transition: all .4s;
+}
+.bt-primeiro{background: url('../img/bt1.png') no-repeat;}
+.bt-primeiro:hover{background: url('../img/bt1_hv.png') no-repeat;}
+.bt-segundo{background: url('../img/bt2.png') no-repeat;}
+.bt-segundo:hover{background: url('../img/bt2_hv.png') no-repeat;}
+.bt-terceiro{background: url('../img/bt3.png') no-repeat;}
+.bt-terceiro:hover{background: url('../img/bt3_hv.png') no-repeat;}
+
+.bloco4{
+    background: url('../img/bg_natureza_juridica.png') no-repeat top center;
+    padding-top: 700px;
+    margin-bottom: -500px;
+}
+.bloco5{
+    background: url('../img/bg_sociedades.png') no-repeat top center;
+    padding-top: 700px;
+    margin-bottom: -500px;
+}
+.bloco6{
+    background: url('../img/bg_constituicao_sociedade.png') no-repeat top center;
+    padding-top: 700px;
+    margin-bottom: -500px;
+}
+.bloco7{
+    background: url('../img/bg_organograma.png') no-repeat top center;
+    padding-top: 700px;
+    margin-bottom: -500px;
+}
+.marcador li{
+    list-style: none;
+    background: url('../img/marcador.png') no-repeat;
+    padding-left: 40px;
+    min-height: 31px;
+    margin-bottom: 5px;
+}
+.bloco8{
+    background: url('../img/bg_setor_cargo.png') no-repeat top center;
+    padding-top: 700px;
+}
+
+.painel2 button{
+    width: 275px;
+    height: 285px;
+    border: none;
+}
+.bt-admgeral{background: url('../img/bt_administracao.png') no-repeat;}
+.bt-admgeral:hover{background: url('../img/bt_adm_geral_hv.png') no-repeat;}
+.bt-recursos{background: url('../img/bt_rh.png') no-repeat;}
+.bt-recursos:hover{background: url('../img/bt_rh_hv.png') no-repeat;}
+.bt-financas{background: url('../img/bt_financas.png') no-repeat;}
+.bt-financas:hover{background: url('../img/bt_financas_hv.png') no-repeat;}
+.bt-producao{background: url('../img/bt_producao.png') no-repeat;}
+.bt-producao:hover{background: url('../img/bt_producao_hv.png') no-repeat;}
+.bt-comercial{background: url('../img/bt_comercial.png') no-repeat;}
+.bt-comercial:hover{background: url('../img/bt_comercial_hv.png') no-repeat;}
