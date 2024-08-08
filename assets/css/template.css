@@ -17,21 +17,6 @@
 
 /* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 5%, transparent 25%), radial-gradient(farthest-corner at 100% 100%, #E9ECEC 0%, transparent 60%), radial-gradient(farthest-corner at -2% 97%, #CF9993 0%, transparent 25%); */
 
-body {
-    background-image: url('../../01_experimentacao/img/textura.png');
-    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), 
-    radial-gradient(farthest-corner at 106% 114%, #002e3b 5%, transparent 25%), 
-    radial-gradient(farthest-corner at -2% 75%, #207893 0%, transparent 25%);
-    position: relative;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    /* background-attachment: fixed !important; */
-    height: auto;
-    font-size: 20px;
-    overflow-x: hidden;
-}
-
 .bg-fundo {
     width: 100%;
     height: 100%;

@@ -1,0 +1,8 @@
+body{
+    background-image: url('../img/bg_esquerda_direita.png'),
+    url('../img/bg_esquerda_direita.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top 100px, right bottom;
+    background-size: 10%, 10%;
+    background-color: #fff;
+}
