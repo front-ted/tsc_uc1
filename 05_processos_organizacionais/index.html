@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="../assets/css/template.css">
 
     <link rel="stylesheet" href="css/custom.css">
+    <!--Atividade arrasta e solta-->
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+    <link rel="stylesheet" href="arrasta_solta/game-custom.css">
 </head>
 
 <body>
@@ -74,7 +77,7 @@
                         efetuar para chegar ao <b>objetivo</b>, que é receber seus convidados.</p>
                     <div class="row align-items-center">
                         <div class="col-12 col-md-5">
-                            <figure class="my-5">
+                            <figure class="my-5 no-print">
                                 <div class="figure-img">
                                     <img class="img-fluid d-block mx-auto mb-4" src="img/joana.png">
                                 </div>
@@ -391,8 +394,148 @@
                     <p>Observe que aqui os setores já estão divididos. Para que seja possível visualizar a etapa do
                         processo que cada setor executa, você deve mover as peças observando o formato de cada uma delas
                         e a qual ação se refere. </p>
+                    <div class="box-atividade container no-print">
+                        <p class="titulo-ativ no-print"> </p>
+                        <div id="content-game" class="no-print">
+                            <div class="container-fluid game-body no-print" style="padding:0;">
+                                <div class="row">
+                                    <div id="slots" class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mt-3 mb-3">
+                                                <div class="game-titulo">
+                                                    <p>SOLICITANTE</p>
+                                                </div>
+                                                <div id="slot-1" class="slot">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 mt-3 mb-3">
+                                                <div class="game-titulo">
+                                                    <p>SECRETARIA</p>
+                                                </div>
+                                                <div id="slot-2" class="slot">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 mt-3 mb-3">
+                                                <div class="game-titulo">
+                                                    <p>FINANCEIRO</p>
+                                                </div>
+                                                <div id="slot-3" class="slot">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 mt-3 mb-3">
+                                                <div class="game-titulo">
+                                                    <p>CONTABILIDADE</p>
+                                                </div>
+                                                <div id="slot-4" class="slot">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="cardPile" class="game-itens-container">
+                                        <div id="card-1" class="card" data-target="slot-1">
+                                            Recebe demanda de visita do cliente
+                                        </div>
+
+                                        <div id="card-13" class="card" data-target="slot-1">
+                                            Preenche formulários e envia <i>e-mail</i> para a secretaria solicitando
+                                            reserva
+                                            de hospedagem
+                                        </div>
+
+                                        <div id="card-3" class="card" data-target="slot-1">
+                                            Realiza hospedagem na data reservada
+                                        </div>
+
+                                        <div id="card-5" class="card" data-target="slot-2">
+                                            Arquiva os <i>e-mails</i>
+                                        </div>
+
+                                        <div id="card-8" class="card" data-target="slot-2">
+                                            Recebe a nota fiscal e o boleto para pagamento e encaminha ao financeiro
+                                        </div>
+
+                                        <div id="card-14" class="card" data-target="slot-2">
+                                            Recebe confirmação do hotel e encaminha ao solicitante
+                                        </div>
+
+                                        <div id="card-10" class="card" data-target="slot-2">
+                                            Confirma a reserva com o hotel e solicita pagamento via boleto e nota fiscal
+                                        </div>
+
+                                        <div id="card-15" class="card" data-target="slot-2">
+                                            Verifica com os hotéis disponibilidade e valores
+                                        </div>
+
+                                        <div id="card-11" class="card" data-target="slot-2">
+                                            Verifica pela internet os hotéis próximos ao cliente
+                                        </div>
+                                        <div id="card-2" class="card" data-target="slot-3">
+                                            Recebe o boleto e a nota fiscal. Confere e manda a nota fiscal para a
+                                            contabilidade
+                                        </div>
+                                        <div id="card-16" class="card" data-target="slot-4">
+                                            Recebe a nota fiscal. Confere e confirma o recebimento para a secretaria
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h1>Designer/Diagramador: criar atividade de arrastar e soltar</h1>
+                <div class="modal fade no-print" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content no-print">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check"></i>
+                                    Parabéns!
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="../assets/atividades/arrasta_solta/resposta_pos.svg" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-8">
+                                        <p>Muito bem, resposta correta!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade no-print" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content no-print">
+                            <div class="modal-header bg-danger">
+                                <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i>
+                                    Atenção!
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="../assets/atividades/arrasta_solta/resposta_neg.svg" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-8">
+                                        <p>Tente novamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>Veja que existe um cabeçalho em que são inseridos os controles do processo, como código, número da
                     revisão, número de páginas e data da revisão. </p>
                 <p>No rodapé, existe um campo para que seja inserido o histórico de melhorias, ou seja, a cada revisão,
@@ -504,7 +647,7 @@
                 <div class="pops">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-5">
-                            <figure class="my-5">
+                            <figure class="my-5 no-print">
                                 <div class="figure-img">
                                     <img class="img-fluid d-block mx-auto mb-4" src="img/pops.png">
                                 </div>
@@ -563,7 +706,7 @@
                 <div class="pops">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-5">
-                            <figure class="my-5">
+                            <figure class="my-5 no-print">
                                 <div class="figure-img">
                                     <img class="img-fluid d-block mx-auto mb-4" src="img/formularios.png">
                                 </div>
@@ -607,13 +750,13 @@
                 <p>Assim, demonstra-se a importância de disseminar o conhecimento da documentação inerente aos processos
                     dentro de uma organização, pois, quanto mais os colaboradores conhecerem as normas e os padrões,
                     mais a empresa conseguirá alinhar os seus processos. </p>
-                <div class="destaque gradiente icone atividade no-print" aria-hidden="true">
+                <div class="destaque gradiente icone atividade" aria-hidden="true">
                     <p>Imagine que você acaba de ser contratado como secretário, ou secretária, de uma importante
                         empresa na área da tecnologia que está crescendo rápido e, por consequência, está apresentando
                         problemas quanto à estruturação e à eficiência nos processos. Sua missão é desvendar quais são
                         as dificuldades e, baseado nos conteúdos que estudou até aqui, propor soluções acertadas que
                         ajudem a empresa a seguir em crescimento, demonstrando que você é um secretário eficiente! </p>
-                    <div class="espera no-print img-fluid" aria-hidden="true">
+                    <div class="espera no-print img-fluid no-print" aria-hidden="true">
                         <h2 class="text-center">Espera</h2>
                     </div>
                 </div>
@@ -623,29 +766,6 @@
                     inconformidades, para que elas sejam corrigidas e os processos sejam aprimorados. Portanto, com os
                     processos mapeados, as empresas têm mais assertividade e exatidão no desempenho das diversas
                     atividades das áreas. </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </section>
         <!-- Paginação-->
@@ -668,6 +788,9 @@
     <script src="../print/print/template.config.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
+    <!--Atividade arrasta e solta-->
+    <script src="../assets/atividades/arrasta_solta/dragula.min.js"></script>
+    <script src="arrasta_solta/game-custom.js"></script>
 
     <script>
         var splide = new Splide('.splide', {
