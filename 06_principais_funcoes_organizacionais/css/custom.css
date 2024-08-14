@@ -28,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .bt-painel1 {
@@ -99,7 +100,7 @@ body {
     background-color: #92ACCE;
     color: #fff;
     padding: 20px;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 0.9em;
     margin-bottom: 0.9em;
@@ -112,7 +113,7 @@ body {
     background-color: #92ACCE;
     color: #fff;
     padding: 20px;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 0.9em;
     margin-bottom: 0.9em;
