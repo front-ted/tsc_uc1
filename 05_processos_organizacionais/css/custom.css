@@ -1,10 +1,15 @@
-body {
+/* body {
     background-image: url('../img/bg_esquerda_direita.png'),
         url('../img/bg_esquerda_direita.png');
     background-repeat: no-repeat, no-repeat;
     background-position: left top 100px, right bottom;
     background-size: 10%, 10%;
     background-color: #fff;
+} */
+body {
+    background: var(--gradiente-bg),
+        url('../img/bg_esquerda_direita.png') no-repeat left top 100px / 10%,
+        url('../img/bg_esquerda_direita.png') no-repeat right bottom / 10%;
 }
 
 .joana {
@@ -17,7 +22,27 @@ body {
     background-position: right;
     padding-left: 15px;
     padding-top: 30px;
-    padding-right: 110px;
+    padding-right: 250px;
+    padding-bottom: 20px;
+}
+
+.marcador3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcador li {
+    list-style: none;
+    background: url('../img/marcador.png') no-repeat;
+    padding-left: 40px;
+    min-height: 31px;
+    margin-bottom: 5px;
+}
+
+.marcador2 {
+    display: inline-block;
 }
 
 .pops {

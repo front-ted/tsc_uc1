@@ -15,6 +15,36 @@
     src: url("../fonts/Figtree-Bold.ttf");
 }
 
+/* ajustes */
+.modal-body .figure-img {
+    margin-bottom: .5rem;
+    line-height: 1;
+    max-width: 55%;
+    margin: auto;
+}
+
+.modal-body .table-responsive {
+    max-width: 55%;
+    margin: auto;
+}
+
+.modal-body .grafismo {
+    width: 65% !important;
+}
+
+.modal-body .accordion-button {
+    width: 65% !important;
+    margin: auto !important;
+}
+
+.modal-body .accordion-body {
+    margin-left: 100px !important;
+}
+
+/* fim ajustes */
+
+
+
 /* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 5%, transparent 25%), radial-gradient(farthest-corner at 100% 100%, #E9ECEC 0%, transparent 60%), radial-gradient(farthest-corner at -2% 97%, #CF9993 0%, transparent 25%); */
 
 .bg-fundo {
@@ -979,7 +1009,7 @@ tbody td:first-child {
     color: #fff;
 }
 
-.bg-escuro li{
+.bg-escuro li {
     color: #000;
 }
 
@@ -1074,6 +1104,30 @@ tbody td:first-child {
 
     .grafismo::after {
         scale: 0.75;
+    }
+
+    .modal-body .grafismo {
+        width: 80% !important;
+    }
+
+    .modal-body .figure-img {
+        margin-bottom: .5rem;
+        line-height: 1;
+        max-width: unset;
+        margin: unset;
+    }
+
+    .modal-body .accordion-button {
+        width: unset;
+        margin: unset;
+    }
+
+    .modal-body .accordion-body {
+        margin-left: 20px !important;
+    }
+
+    .modal-body .table-responsive {
+        max-width: unset;
     }
 }
 
