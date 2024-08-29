@@ -12,6 +12,10 @@ body {
         url('../img/bg_esquerda_direita.png') no-repeat right bottom / 10%;
 }
 
+.figtabela {
+    padding: 15px;
+}
+
 .joana {
     background-image: url('../img/bg_joana.png');
     background-repeat: no-repeat;

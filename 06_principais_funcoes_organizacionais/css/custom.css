@@ -15,6 +15,10 @@ body {
     margin-top: -3.25rem !important;
 }
 
+.figtabela {
+    padding: 15px;
+}
+
 .marcador3 {
     display: flex;
     align-content: center;
