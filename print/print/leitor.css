@@ -42,6 +42,15 @@
   margin: auto;
 }
 
+.pagina .processos {
+  display: flex !important;
+  max-width: 100% !important;
+}
+
+.pagina .processos img {
+  max-width: 100% !important;
+}
+
 .pagina tbody {
   display: table-row-group;
   vertical-align: middle;

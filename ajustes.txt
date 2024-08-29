@@ -1,13 +1,3 @@
-arrumar tamanho imagens arrumar podcast ipad, mobile e transcricao
-
- <div class="mx-auto text-center">
-                        <ul class="marcador my-5 marcador2">
-                            <li>Departamentalização funcional</li>
-                        </ul>
-                    </div>
-
- <div class="mx-auto mb-1 mt-1">
-                    <ul class="marcador marcador2">
-                        <li></li>
-                    </ul>
-                </div>
+arrumar arrumar podcast ipad, mobile e transcricao
+Fazer os paineis novos
+arrumar painel de bolinhas na pg 6

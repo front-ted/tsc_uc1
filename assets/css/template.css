@@ -23,6 +23,12 @@
     margin: auto;
 }
 
+.modal-body .ratio {
+    width: 60%;
+    margin: auto;
+}
+
+
 .modal-body .table-responsive {
     max-width: 55%;
     margin: auto;
@@ -1084,6 +1090,11 @@ tbody td:first-child {
 @media screen and (max-width: 780px) {
     h1 {
         font-size: 5vw;
+    }
+
+    .modal-body .ratio {
+        width: unset;
+        margin: unset;
     }
 
     .topo-logo {
