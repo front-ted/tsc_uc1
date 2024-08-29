@@ -23,6 +23,10 @@
     margin: auto;
 }
 
+.modal-body img {
+    padding: 10px !important;
+}
+
 .modal-body .table-responsive {
     max-width: 55%;
     margin: auto;
@@ -30,6 +34,7 @@
 
 .modal-body .grafismo {
     width: 65% !important;
+    margin: auto;
 }
 
 .modal-body .accordion-button {
@@ -42,6 +47,8 @@
 }
 
 /* fim ajustes */
+
+
 
 /* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 5%, transparent 25%), radial-gradient(farthest-corner at 100% 100%, #E9ECEC 0%, transparent 60%), radial-gradient(farthest-corner at -2% 97%, #CF9993 0%, transparent 25%); */
 

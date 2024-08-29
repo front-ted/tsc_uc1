@@ -7,6 +7,45 @@ body {
     background-color: #fff;
 }
 
+.mb-n1 {
+    margin-bottom: -2.25rem !important;
+}
+
+.mt-n1 {
+    margin-top: -3.25rem !important;
+}
+
+.marcador3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcador li {
+    list-style: none;
+    background: url('../img/marcador.png') no-repeat;
+    padding-left: 40px;
+    min-height: 31px;
+    margin-bottom: 5px;
+}
+
+.marcador2 {
+    display: inline-block;
+}
+
+.bt-baixar {
+    width: 297px;
+    height: 92px;
+    border: none;
+    transition: all .4s;
+    background: url('../img/bt_baixar.png') no-repeat;
+}
+
+.bt-baixar:hover {
+    scale: 1.1;
+}
+
 .espera {
     width: 80%;
     height: 300px;
