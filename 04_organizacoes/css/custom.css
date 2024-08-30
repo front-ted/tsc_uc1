@@ -44,34 +44,46 @@ body {
 }
 
 .painel1 button {
-    width: 260px;
-    height: 304px;
     border: none;
     transition: all .4s;
+    position: relative;
 }
 
 .bt-primeiro {
     background: url('../img/bt1.png') no-repeat;
-}
-
-.bt-primeiro:hover {
-    background: url('../img/bt1_hv.png') no-repeat;
+    width: 160px;
+    height: 217px;
+    left: 133px;
+    top: -18px;
 }
 
 .bt-segundo {
     background: url('../img/bt2.png') no-repeat;
-}
-
-.bt-segundo:hover {
-    background: url('../img/bt2_hv.png') no-repeat;
+    width: 145px;
+    height: 208px;
+    left: 112px;
+    top: -22px;
 }
 
 .bt-terceiro {
     background: url('../img/bt3.png') no-repeat;
+    width: 240px;
+    height: 107px;
+    left: -150px;
+    top: 100px;
 }
 
-.bt-terceiro:hover {
-    background: url('../img/bt3_hv.png') no-repeat;
+.painel1 button:hover {
+    scale: 1.1;
+}
+
+.painel1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    align-items: center;
+    align-content: center;
 }
 
 .marcador li {
@@ -180,4 +192,41 @@ body {
         left: unset;
         top: unset;
     }
+
+}
+
+
+@media screen and (max-width: 625px) {
+    .painel1 button {
+        position: unset;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .bt-primeiro,
+    .bt-segundo,
+    .bt-terceiro {
+        right: unset;
+        top: unset;
+        left: unset;
+    }
+
+    .bt-primeiro {
+        transform: rotate(55deg);
+    }
+
+    .bt-segundo {
+        transform: rotate(-65deg);
+    }
+
+    .painel1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
 }
