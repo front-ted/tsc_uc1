@@ -77,9 +77,16 @@ body {
 .bt-painel1 {
     background-color: transparent;
     border: none;
-    width: 234px;
-    height: 75px;
+    width: 288px;
+    height: 155px;
     margin: 10px;
+    transition: transform 0.2s, filter 0.2s;
+    outline: none;
+}
+
+.bt-painel1:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1));
 }
 
 .bt1-painel1 {
@@ -110,33 +117,6 @@ body {
     background-image: url('../img/bt_encerramento.png');
 }
 
-.bt1-painel1:hover {
-    background-image: url('../img/bt_gestao_pessoas_hv.png');
-}
-
-.bt2-painel1:hover {
-    background-image: url('../img/bt_logistica_hv.png');
-}
-
-.bt3-painel1:hover {
-    background-image: url('../img/bt_financas_hv.png');
-}
-
-.bt4-painel1:hover {
-    background-image: url('../img/bt_mkt_hv.png');
-}
-
-.bt5-painel1:hover {
-    background-image: url('../img/bt_vendas_hv.png');
-}
-
-.bt6-painel1:hover {
-    background-image: url('../img/bt_juridico_hv.png');
-}
-
-.bt7-painel1:hover {
-    background-image: url('../img/bt_encerramento_hv.png');
-}
 
 #feedback-acerto {
     display: none;
