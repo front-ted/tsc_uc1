@@ -5,4 +5,4 @@ arrumar painel de bolinhas na pg 6
 paineis que tem que fazer
 pag 2 são 2
 pag 3 é 1
-pag 4 são 2
+pag 4 é 1
