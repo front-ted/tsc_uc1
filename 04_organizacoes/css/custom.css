@@ -83,45 +83,70 @@ body {
 }
 
 .painel2 button {
-    width: 275px;
-    height: 285px;
+    width: 301px;
+    height: 318px;
     border: none;
+    position: relative;
+}
+
+.painel2 {
+    background-position: center;
+    background-size: contain;
+    border: none;
+    background-image: url(../img/01_1.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem !important;
+    margin-top: 3rem !important;
 }
 
 .bt-admgeral {
     background: url('../img/bt_administracao.png') no-repeat;
+    top: 60px;
+}
+
+.bt-producao {
+    background: url('../img/bt_producao.png') no-repeat;
+    left: 100px;
+    top: 180px;
+}
+
+.bt-recursos {
+    background: url('../img/bt_rh.png') no-repeat;
+    left: 400px;
+    top: -70px;
+}
+
+.bt-financas {
+    background: url('../img/bt_financas.png') no-repeat;
+    left: 100px;
+    top: 200px;
+}
+
+.bt-comercial {
+    background: url('../img/bt_comercial.png') no-repeat;
+    left: 245px;
+    top: 150px;
 }
 
 .bt-admgeral:hover {
     background: url('../img/bt_adm_geral_hv.png') no-repeat;
 }
 
-.bt-recursos {
-    background: url('../img/bt_rh.png') no-repeat;
-}
-
 .bt-recursos:hover {
     background: url('../img/bt_rh_hv.png') no-repeat;
-}
-
-.bt-financas {
-    background: url('../img/bt_financas.png') no-repeat;
 }
 
 .bt-financas:hover {
     background: url('../img/bt_financas_hv.png') no-repeat;
 }
 
-.bt-producao {
-    background: url('../img/bt_producao.png') no-repeat;
-}
-
 .bt-producao:hover {
     background: url('../img/bt_producao_hv.png') no-repeat;
-}
-
-.bt-comercial {
-    background: url('../img/bt_comercial.png') no-repeat;
 }
 
 .bt-comercial:hover {
@@ -137,4 +162,22 @@ body {
         margin-top: unset;
     }
 
+    .painel2 {
+        margin-bottom: 10px !important;
+        background-image: none;
+        margin-top: 10px !important;
+    }
+
+    .painel2 button {
+        position: unset;
+    }
+
+    .bt-comercial,
+    .bt-financas,
+    .bt-recursos,
+    .bt-producao,
+    .bt-admgeral {
+        left: unset;
+        top: unset;
+    }
 }
