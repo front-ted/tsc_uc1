@@ -176,34 +176,18 @@
     background: url('../img/bt_agregar.png') no-repeat;
     width: 185px;
     height: 114px;
-    left: 0;
-    top: 100px;
-}
-
-.bt-agregar:hover {
-    background: url('../img/bt_agregar_hv.png') no-repeat;
-}
-
-.bt-agregar.visto {
-    background: url('../img/bt_agregar_visto.png') no-repeat;
-}
-
-.bt-aplicar {
-    background: url('../img/bt_aplicar.png') no-repeat;
-    width: 184px;
-    height: 184px;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
 }
 
-.bt-aplicar:hover {
-    background: url('../img/bt_aplicar_hv.png') no-repeat;
-}
-
-.bt-aplicar.visto {
-    background: url('../img/bt_aplicar_visto.png') no-repeat;
+.bt-aplicar {
+    background: url('../img/bt_aplicar.png') no-repeat;
+    width: 184px;
+    height: 184px;
+    right: 0;
+    top: 100px;
 }
 
 .bt-recompensar {
@@ -211,23 +195,37 @@
     width: 185px;
     height: 114px;
     right: 0;
-    top: 100px;
-}
-
-.bt-recompensar:hover {
-    background: url('../img/bt_recompensar_hv.png') no-repeat;
-}
-
-.bt-recompensar.visto {
-    background: url('../img/bt_recompensar_visto.png') no-repeat;
+    bottom: 60px;
 }
 
 .bt-desenvolver {
     background: url('../img/bt_desenvolver.png') no-repeat;
     width: 185px;
     height: 114px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bt-manter {
+    background: url('../img/bt_manter.png') no-repeat;
+    width: 184px;
+    height: 182px;
     left: 0;
     bottom: 100px;
+}
+
+.bt-monitorar {
+    background: url('../img/bt_monitorar.png') no-repeat;
+    width: 185px;
+    height: 114px;
+    left: 0;
+    top: 55px;
+}
+
+.bt-agregar:hover {
+    background: url('../img/bt_agregar_hv.png') no-repeat;
 }
 
 .bt-desenvolver:hover {
@@ -238,14 +236,24 @@
     background: url('../img/bt_desenvolver_visto.png') no-repeat;
 }
 
-.bt-manter {
-    background: url('../img/bt_manter.png') no-repeat;
-    width: 184px;
-    height: 182px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.bt-agregar.visto {
+    background: url('../img/bt_agregar_visto.png') no-repeat;
+}
+
+.bt-aplicar:hover {
+    background: url('../img/bt_aplicar_hv.png') no-repeat;
+}
+
+.bt-aplicar.visto {
+    background: url('../img/bt_aplicar_visto.png') no-repeat;
+}
+
+.bt-recompensar:hover {
+    background: url('../img/bt_recompensar_hv.png') no-repeat;
+}
+
+.bt-recompensar.visto {
+    background: url('../img/bt_recompensar_visto.png') no-repeat;
 }
 
 .bt-manter:hover {
@@ -254,14 +262,6 @@
 
 .bt-manter.visto {
     background: url('../img/bt_manter_visto.png') no-repeat;
-}
-
-.bt-monitorar {
-    background: url('../img/bt_monitorar.png') no-repeat;
-    width: 185px;
-    height: 114px;
-    right: 0;
-    bottom: 100px;
 }
 
 .bt-monitorar:hover {
