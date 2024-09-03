@@ -17,41 +17,76 @@
 }
 
 .painel1 {
-    max-width: 860px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -400px;
 }
 
 .painel1 button {
     border: none;
     margin-bottom: 30px;
     transition: all .4s;
+    position: relative;
 }
 
 .painel1 button:hover {
     transform: scale(1.1);
 }
 
+.linha1 {
+    top: -100px;
+    left: 100px;
+    position: relative;
+    z-index: -1;
+}
+
+.linha2 {
+    z-index: -1;
+    bottom: 250px;
+    right: 60px;
+    position: relative;
+}
+
+.linha3 {
+    top: -415px;
+    left: 100px;
+    position: relative;
+    z-index: -1;
+}
+
 .bt-planejamento {
     background: url('../img/bt_planejamento_hv.png') no-repeat;
-    width: 300px;
-    height: 280px;
+    width: 293px;
+    height: 133px;
+    right: 100px;
 }
 
 .bt-organizacao {
     background: url('../img/bt_organizacao_hv.png') no-repeat;
-    width: 303px;
-    height: 288px;
+    width: 288px;
+    height: 125px;
+    left: 150px;
+    bottom: 150px;
 }
 
 .bt-direcao {
     background: url('../img/bt_direcao_hv.png') no-repeat;
-    width: 285px;
-    height: 334px;
+    width: 280px;
+    height: 165px;
+    right: 100px;
+    top: -315px;
 }
 
 .bt-controle {
     background: url('../img/bt_controle_hv.png') no-repeat;
-    width: 303px;
-    height: 283px;
+    width: 302px;
+    height: 132px;
+    left: 100px;
+    top: -460px;
 }
 
 .figcontrole {
@@ -69,4 +104,34 @@
 
 .figesquema {
     padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .painel1 {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .painel1 button {
+        position: unset;
+    }
+
+    .linha1 {
+        display: none;
+    }
+
+    .linha2 {
+        display: none;
+    }
+
+    .linha3 {
+        display: none;
+    }
 }

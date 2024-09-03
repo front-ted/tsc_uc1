@@ -39,13 +39,25 @@
     margin: auto;
 }
 
-.modal-body .accordion-button {
-    width: 65% !important;
-    margin: auto !important;
+.modal-body .bg-podcast .accordion-body {
+    padding-bottom: 210px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    margin-left: 10px !important;
 }
 
 .modal-body .accordion-body {
-    margin-left: 100px !important;
+    margin-left: 150px !important;
+}
+
+.modal-body .bg-podcast .accordion-button {
+    width: 100% !important;
+    margin: auto !important;
+}
+
+.modal-body .accordion-button {
+    width: 65% !important;
+    margin: auto !important;
 }
 
 /* fim ajustes */
@@ -1129,17 +1141,41 @@ tbody td:first-child {
         margin: unset;
     }
 
+    .modal-body .table-responsive {
+        max-width: unset;
+    }
+
+    .modal-body .bg-podcast .accordion-body {
+        padding-bottom: 10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin-left: 10px !important;
+    }
+
     .modal-body .accordion-button {
-        width: unset;
-        margin: unset;
+        width: 100% !important;
+        margin: auto !important;
     }
 
     .modal-body .accordion-body {
-        margin-left: 20px !important;
+        margin-left: 0px !important;
     }
 
-    .modal-body .table-responsive {
-        max-width: unset;
+    .modal-body .bg-podcast .accordion-button {
+        width: 100% !important;
+        margin: auto !important;
+    }
+
+    .audio-player::before {
+        display: none;
+    }
+
+    .audio-player::after {
+        display: none;
+    }
+
+    .bg-podcast::after {
+        display: none;
     }
 }
 
@@ -1147,5 +1183,10 @@ tbody td:first-child {
     .topo-logo {
         background-size: 47%, 14%;
         background-position: left -155px center, right 5% center;
+    }
+
+    .modal-body .bg-podcast .accordion-button {
+        width: auto !important;
+        margin: auto !important;
     }
 }

@@ -60,16 +60,7 @@ h2 span {
     background: url("../img/bt1_hv.png") no-repeat;
 }
 
-.bg-podcast.taylor .audio-player::after {
-    display: none;
-}
 
-.bg-podcast.taylor .audio-player::before {
-    background: url('../img/podcast_taylor.png') no-repeat;
-    width: 400px;
-    height: 230px;
-    left: -100px;
-}
 
 .marcador li {
     list-style: none;
@@ -77,18 +68,6 @@ h2 span {
     padding-left: 40px;
     min-height: 31px;
     margin-bottom: 5px;
-}
-
-.bg-podcast.ford .audio-player::after {
-    display: none;
-}
-
-.bg-podcast.ford .audio-player::before {
-    background: url('../img/podcast_ford.png') no-repeat;
-    width: 400px;
-    height: 295px;
-    left: -100px;
-    bottom: 0;
 }
 
 .bt-teoria-classica {
@@ -99,30 +78,6 @@ h2 span {
 
 .bt-teoria-classica:hover {
     background: url("../img/bt2_hv.png") no-repeat;
-}
-
-.bg-podcast.fayol .audio-player::after {
-    display: none;
-}
-
-.bg-podcast.fayol .audio-player::before {
-    background: url('../img/podcast_fayol.png') no-repeat;
-    width: 400px;
-    height: 295px;
-    left: -100px;
-    bottom: 0;
-}
-
-.bg-podcast.mayo .audio-player::after {
-    display: none;
-}
-
-.bg-podcast.mayo .audio-player::before {
-    background: url('../img/podcast_mayo.png') no-repeat;
-    width: 400px;
-    height: 295px;
-    left: -100px;
-    bottom: 0;
 }
 
 .bt-adm-humanista {
@@ -183,17 +138,9 @@ h2 span {
     #booklet {
         background: none;
     }
-
-    .bg-podcast p {
-        max-width: 50%;
-    }
 }
 
 @media screen and (max-width: 800px) {
-    .bg-podcast p {
-        max-width: 100%;
-    }
-
     .imgmenor {
         max-width: 55% !important;
         margin: auto !important;
@@ -201,27 +148,6 @@ h2 span {
 }
 
 @media screen and (max-width: 580px) {
-    .bg-podcast::after {
-        display: none;
-    }
-
-    .accordion-button,
-    .accordion-button:not(.collapsed) {
-        padding-left: 15px;
-    }
-
-    .bg-podcast.ford .audio-player::before {
-        height: 232px;
-    }
-
-    .bg-podcast.fayol .audio-player::before {
-        height: 250px;
-    }
-
-    .bg-podcast.mayo .audio-player::before {
-        bottom: -45px;
-    }
-
     .info {
         width: 100%;
     }
