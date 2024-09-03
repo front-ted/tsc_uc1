@@ -3,7 +3,10 @@ h2 {
 }
 
 body {
-    background-image: var(--gradiente-bg);
+    background-image: radial-gradient(farthest-corner at 5% 5%, rgba(32, 120, 147, 0.5) 0%, rgba(32, 120, 147, 0) 60%), 
+    radial-gradient(farthest-corner at 100% 100%, rgba(146, 172, 206, 0.5) 0%, rgba(146, 172, 206, 0) 60%),
+    radial-gradient(farthest-corner at 0% 100%, rgba(32, 120, 147, 0.5) 0%, rgba(32, 120, 147, 0) 50%);
+    
 }
 
 .mb-n1 {
