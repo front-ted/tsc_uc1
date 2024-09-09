@@ -33,6 +33,10 @@
     height: 790px;
     margin: 50px auto; 
 }*/
+.citacao {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
 
 .painel1_2 {
     display: flex;
