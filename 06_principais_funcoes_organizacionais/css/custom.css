@@ -15,16 +15,25 @@ body {
     margin-top: -3.25rem !important;
 }
 
+.citacao {
+    text-align: justify;
+    padding-left: 100px;
+}
+
+.modal-body .img03 {
+    width: 70%;
+}
+
 .figtabela {
     padding: 15px;
 }
 
-.marcador3 {
+ .marcador3 {
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .marcador li {
     list-style: none;
@@ -36,6 +45,7 @@ body {
 
 .marcador2 {
     display: inline-block;
+    text-align: justify;
 }
 
 .bt-baixar {
@@ -142,4 +152,14 @@ body {
     margin-bottom: 0.9em;
     border-radius: 1em;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+    .citacao {
+        padding-left: 20%;
+    }
+
+    .modal-body .img03 {
+        width: 100%;
+    }
 }
