@@ -1190,3 +1190,18 @@ tbody td:first-child {
         margin: auto !important;
     }
 }
+
+.btn-thumb > img {
+    max-width: 550px;
+    transition: .5s;
+    margin: auto;
+    display: block;
+    box-shadow: 0 3px 2px #3333339f;
+}
+
+.btn-thumb > img:hover {
+    max-width: 550px;
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px #3333339f;
+}
