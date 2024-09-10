@@ -7,6 +7,102 @@ h2 span {
     font-size: .8em;
 }
 
+
+.bg-podcast.taylor .audio-player::after {
+    display: none;
+}
+
+.bg-podcast.taylor .audio-player::before {
+    background: url('../img/podcast_taylor.png') no-repeat;
+    width: 400px;
+    height: 230px;
+    left: -100px;
+}
+
+.bg-podcast.ford .audio-player::after {
+    display: none;
+}
+
+.bg-podcast.ford .audio-player::before {
+    background: url('../img/podcast_ford.png') no-repeat;
+    width: 400px;
+    height: 295px;
+    left: -100px;
+    bottom: 0;
+}
+
+.bg-podcast.fayol .audio-player::after {
+    display: none;
+}
+
+.bg-podcast.fayol .audio-player::before {
+    background: url('../img/podcast_fayol.png') no-repeat;
+    width: 400px;
+    height: 295px;
+    left: -100px;
+    bottom: 0;
+}
+
+.bg-podcast.mayo .audio-player::after {
+    display: none;
+}
+
+.bg-podcast.mayo .audio-player::before {
+    background: url('../img/podcast_mayo.png') no-repeat;
+    width: 400px;
+    height: 295px;
+    left: -100px;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .imgmenor {
     max-width: 25% !important;
 }
@@ -59,8 +155,6 @@ h2 span {
 .bt-adm-cientifica:hover {
     background: url("../img/bt1_hv.png") no-repeat;
 }
-
-
 
 .marcador li {
     list-style: none;
@@ -145,9 +239,16 @@ h2 span {
         max-width: 55% !important;
         margin: auto !important;
     }
+
     .destaque.icone {
         margin-top: 90px;
         padding: 40px 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bg-podcast {
+        padding-bottom: 0 !important;
     }
 }
 
@@ -156,4 +257,19 @@ h2 span {
         width: 100%;
     }
 
+    .bg-podcast.ford .audio-player::before {
+        height: 232px;
+    }
+
+    .bg-podcast.fayol .audio-player::before {
+        height: 250px;
+    }
+
+    .bg-podcast.mayo .audio-player::before {
+        bottom: -45px;
+    }
+
+    .bg-podcast::after {
+        display: none;
+    }
 }
