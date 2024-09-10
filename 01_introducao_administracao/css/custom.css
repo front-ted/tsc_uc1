@@ -145,6 +145,10 @@ h2 span {
         max-width: 55% !important;
         margin: auto !important;
     }
+    .destaque.icone {
+        margin-top: 90px;
+        padding: 40px 10px 10px 10px;
+    }
 }
 
 @media screen and (max-width: 580px) {

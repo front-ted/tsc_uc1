@@ -215,22 +215,60 @@ body {
         left: unset;
     }
 
-    .bt-primeiro {
-        transform: rotate(55deg);
-    }
-
-    .bt-segundo {
-        transform: rotate(-65deg);
-    }
-
     .painel1 {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-content: center;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
+    .bt-primeiro,
+    .bt-segundo,
+    .bt-terceiro {
+        top: unset;
+        right: unset;
+        background: #345c64;
+        width: 200px;
+        height: 150px;
+        border-radius: 30px;
+    }
+
+    .bt-primeiro:hover,
+    .bt-segundo:hover,
+    .bt-terceiro:hover {
+        top: unset;
+        right: unset;
+        background: #0c2c3c;
+        width: 200px;
+        height: 150px;
+        border-radius: 30px;
+    }
+
+    .bt-primeiro::after {
+        content: "Primeiro setor";
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .bt-segundo::after {
+        content: "Segundo setor";
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .bt-terceiro::after {
+        content: "Terceiro setor";
+        color: #fff;
+        font-weight: bold;
+    }
+    .destaque.icone {
+        margin-top: 90px;
+        padding: 40px 10px 10px 10px;
+    }
+    .marcador2 {
+        text-align: left;
+    }
 }

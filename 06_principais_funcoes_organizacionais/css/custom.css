@@ -28,12 +28,12 @@ body {
     padding: 15px;
 }
 
- .marcador3 {
+.marcador3 {
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .marcador li {
     list-style: none;
@@ -161,5 +161,18 @@ body {
 
     .modal-body .img03 {
         width: 100%;
+    }
+
+    .marcador2 {
+        text-align: left;
+    }
+
+    .bt-baixar {
+        scale: 0.6;
+        margin-left: -90px;
+    }
+
+    .bt-painel1:hover {
+        transform: scale(0.7);
     }
 }
