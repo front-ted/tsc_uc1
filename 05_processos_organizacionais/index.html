@@ -494,9 +494,44 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="espera no-print img-fluid no-print" aria-hidden="true">
-                        <h2 class="text-center">Espera</h2>
-                    </div>
+                    <style>
+                        .oda-quiz {
+                            transition: .5s;
+                            max-width: fit-content;
+                            margin: auto;
+                            display: block;
+                            box-shadow: 0 3px 3px #35353567;
+                            position: relative;
+                        }
+
+                        .oda-quiz img {
+                            max-width: 450px;
+                            height: auto;
+                        }
+
+                        .oda-quiz:hover {
+                            transform: scale(1.1);
+                            transition: .5s;
+                            box-shadow: 0 10px 10px #35353567;
+                        }
+
+                        /*                               
+                            .oda-quiz::before {
+                              content: "";
+                              width: 150px;
+                              height: 150px;
+                              background: url(imgs/selo-presencialidade.png) top left / 100% auto no-repeat;
+                              position: absolute;
+                              z-index: 10;
+                              display: block;
+                              top: -25px;
+                              left: -75px;
+                            } */
+                    </style>
+                    <p>Clique ou toque abaixo para acessar o conteúdo.</p>
+                    <a href="oda-fluxograma/index.html" class="oda-quiz" target="_blank">
+                        <img src="oda-fluxograma/thumb.png" class="img-fluid" alt="Clique para abrir o quiz">
+                    </a>
                 </div>
                 <div class="modal fade no-print" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou"
                     aria-hidden="true">

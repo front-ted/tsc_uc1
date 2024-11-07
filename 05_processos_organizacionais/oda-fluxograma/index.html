@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSC UC1 - Fluxograma</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="objeto-tsc-fluxograma">
+            <img src="assets/img/logo.svg" alt="logo" class="fluxograma-logo">
+            <p class="tutorial-msg">
+                Realize a montagem do fluxograma de atividade do processo de reserva, selecionando os campos com o ícone
+                "+" e determinando o símbolo que deverá ser inserido conforme a ação da área responsável.
+            </p>
+            <div class="tags">
+                <img src="assets/img/tag1.svg" class="tag-img">
+                <img src="assets/img/tag2.svg" class="tag-img">
+                <img src="assets/img/tag3.svg" class="tag-img">
+                <img src="assets/img/tag4.svg" class="tag-img">
+            </div>
+            <div class="fluxograma-container">
+                <img src="assets/img/caminho.svg" class="img-caminho">
+                <div class="absolute-position">
+
+                    <img src="assets/img/div_pontilhado.svg" alt="" class="div-pontilhado pontilhado-1">
+                    <img src="assets/img/div_pontilhado.svg" alt="" class="div-pontilhado pontilhado-2">
+                    <img src="assets/img/div_pontilhado.svg" alt="" class="div-pontilhado pontilhado-3">
+                    <img src="assets/img/div_pontilhado.svg" alt="" class="div-pontilhado pontilhado-4">
+                </div>
+                <div class="fluxograma-col solicitante">
+                    <button data-resposta="1" class="fluxograma-option-selector right">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_01.svg" alt="">
+                </div>
+                <div class="fluxograma-col solicitante">
+                    <button data-resposta="2" class="fluxograma-option-selector right">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_02.svg" alt="">
+                </div>
+                <div class="fluxograma-col secretaria">
+                    <button data-resposta="3" class="fluxograma-option-selector down">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_03.svg" alt="">
+                </div>
+                <div class="fluxograma-col secretaria">
+                    <button data-resposta="4" class="fluxograma-option-selector right">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_04.svg" alt="">
+                </div>
+                <div class="fluxograma-col secretaria">
+                    <button data-resposta="5" class="fluxograma-option-selector right">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_05.svg" alt="">
+                </div>
+                <div class="fluxograma-col secretaria">
+                    <button data-resposta="6" class="fluxograma-option-selector right">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_06.svg" alt="">
+                </div>
+                <div class="fluxograma-col solicitante">
+                    <button data-resposta="7" class="fluxograma-option-selector up">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_07.svg" alt="">
+                </div>
+                <div class="fluxograma-col secretaria">
+                    <button data-resposta="8" class="fluxograma-option-selector right">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_08.svg" alt="">
+                </div>
+                <div class="fluxograma-col financeiro">
+                    <button data-resposta="9" class="fluxograma-option-selector down">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_09.svg" alt="">
+                </div>
+                <div class="fluxograma-col contabil">
+                    <button data-resposta="10" class="fluxograma-option-selector down">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_10.svg" alt="">
+                </div>
+                <div class="fluxograma-col secretaria">
+                    <button data-resposta="11" class="fluxograma-option-selector up">
+                    </button>
+                    <img class="img-fluxo" src="assets/img/fluxo_11.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalOpcoes" tabindex="-1" aria-labelledby="modalOpcoesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="modalOpcoesLabel">Modal opcoes</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tela-modal-opcoes-1">
+                        <p>Selecione a ação a ser aplicada no fluxograma da lista de tarefas abaixo:</p>
+                        <div class="lista-acoes">
+                            <button data-resposta="1" class="opcao-fluxograma">
+                                Recebe demanda de visita do cliente
+                            </button>
+                            <button data-resposta="2" class="opcao-fluxograma">
+                                Preenche formulário e envia <em>e-mail</em> para a secretaria solicitando reserva de
+                                hospedagem.
+                            </button>
+                            <button data-resposta="3" class="opcao-fluxograma">
+                                Verifica pela internet os hotéis próximos ao cliente.
+                            </button>
+                            <button data-resposta="4" class="opcao-fluxograma">
+                                Verifica com os hotéis disponibilidade e valores.
+                            </button>
+                            <button data-resposta="5" class="opcao-fluxograma">
+                                Confirma a reserva com o hotel e solicita pagamento via boleto e nota fiscal.
+                            </button>
+                            <button data-resposta="6" class="opcao-fluxograma">
+                                Recebe confirmação do hotel e encaminha ao solicitante.
+                            </button>
+                            <button data-resposta="7" class="opcao-fluxograma">
+                                Realiza hospedagem na data reservada.
+                            </button>
+                            <button data-resposta="8" class="opcao-fluxograma">
+                                Recebe a nota fiscal e o boleto para pagamento e encaminha ao financeiro.
+                            </button>
+                            <button data-resposta="9" class="opcao-fluxograma">
+                                Recebe o boleto e a nota fiscal. Confere e manda a nota fiscal para a contabilidade.
+                            </button>
+                            <button data-resposta="10" class="opcao-fluxograma">
+                                Recebe a nota fiscal. Confere e confirma o recebimento para a secretaria.
+                            </button>
+                            <button data-resposta="11" class="opcao-fluxograma">
+                                Arquiva os <em>e-mails</em>.
+                            </button>
+                        </div>
+                        <div class="modal-btn-container">
+                            <button type="button" class="btn disabled btn-proximo">Próximo</button>
+                        </div>
+                    </div>
+                    <div class="tela-modal-opcoes-2">
+                        <p>Selecione a seguir o símbolo que deve acompanhar a ação do processo que irá no fluxograma.
+                        </p>
+                        <div class="lista-simbolos">
+                            <button data-resposta="1" class="opcao-fluxograma">
+                                <img src="assets/img/leg_elipse.svg" alt="">
+                                Início / fim
+                            </button>
+                            <button data-resposta="2" class="opcao-fluxograma">
+                                <img src="assets/img/leg_retangulo.svg" alt="">
+                                Etapas do processo
+                            </button>
+                            <button data-resposta="3" class="opcao-fluxograma">
+                                <img src="assets/img/leg_folha.svg" alt="">
+                                Formulário para preencher
+                            </button>
+                            <button data-resposta="4" class="opcao-fluxograma">
+                                <img src="assets/img/leg_circulo.svg" alt="">
+                                Conector (mesma página)
+                            </button>
+                            <button data-resposta="5" class="opcao-fluxograma">
+                                <img src="assets/img/leg_losango.svg" alt="">
+                                Decisão ou controle
+                            </button>
+                            <button data-resposta="6" class="opcao-fluxograma">
+                                <img src="assets/img/leg_cruz.svg" alt="">
+                                Atividades simultâneas
+                            </button>
+                        </div>
+                        <div class="modal-btn-container">
+                            <button type="button" class="btn btn-voltar">Voltar</button>
+                            <button type="button" class="btn disabled btn-concluir">Concluir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFeedbackNegativo" tabindex="-1" aria-labelledby="modalFeedbackNegativoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="modalFeedbackNegativoLabel">Modal opcoes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <img src="assets/img/ico_feed_neg.svg" class="img-feedback">
+                    <p>Esta não é uma combinação válida para essa posição. Tente novamente.</p>
+                    <div class="modal-btn-container"><button class="btn btn-repetir"
+                            data-bs-dismiss="modal">Repetir</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalFeedbackPositivo" tabindex="-1" aria-labelledby="modalFeedbackPositivoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="modalFeedbackPositivoLabel">Modal opcoes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <img src="assets/img/ico_feed_pos.svg" class="img-feedback">
+                    <p>Muito bem! Esta é uma combinação válida para essa posição do processo.</p>
+                    <div class="modal-btn-container"><button class="btn btn-continuar"
+                            data-bs-dismiss="modal">Continuar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalFeedbackFinal" tabindex="-1" aria-labelledby="modalFeedbackFinalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="modalFeedbackFinalLabel">Modal opcoes</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parabéns! Você concluiu o Processo de Reserva. Para visualizar o fluxograma completo, clique ou
+                        toque no botão abaixo para fazer o download do arquivo.</p>
+                    <div class="modal-btn-container"><a href="assets/fluxograma.pdf" target="_blank" download class="btn btn-download">Download</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

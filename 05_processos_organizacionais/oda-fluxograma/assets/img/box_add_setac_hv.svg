@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.17 112.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #e0ebfa;
+        stroke: #b5a392;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #094557;
+      }
+
+      .cls-4 {
+        fill: #b5a392;
+      }
+    </style>
+  </defs>
+  <g id="Camada_4">
+    <g>
+      <g>
+        <rect class="cls-2" x=".5" y="11.87" width="100.17" height="100.17"/>
+        <path class="cls-4" d="M55.28,57.23h12.28v8.88h-12.28v13.87h-9.35v-13.87h-12.31v-8.88h12.31v-13.29h9.35v13.29Z"/>
+      </g>
+      <g>
+        <polygon class="cls-1" points="50.59 15.36 57.33 1.58 43.84 1.58 50.59 15.36"/>
+        <polygon class="cls-3" points="50.59 13.79 57.33 0 43.84 0 50.59 13.79"/>
+      </g>
+    </g>
+  </g>
+</svg>

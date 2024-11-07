@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3051.05 1016.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #094557;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #635a54;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_4">
+    <g>
+      <rect class="cls-1" x="1956.58" y="128.15" width="167.31" height="3.12"/>
+      <g>
+        <rect class="cls-1" x="2638.33" y="911.59" width="182.11" height="3.12"/>
+        <rect class="cls-1" x="2476.59" y="650.42" width="163.3" height="3.12"/>
+        <rect class="cls-1" x="720.96" y="397.53" width="1238.74" height="3.12"/>
+        <rect class="cls-1" x="1956.58" y="129.71" width="3.12" height="268.89"/>
+        <rect class="cls-1" x="219.9" y="129.28" width="504.16" height="3.12"/>
+        <rect class="cls-1" x="720.96" y="129.28" width="3.12" height="269.89"/>
+        <rect class="cls-1" x="2120.77" y="397.53" width="357.37" height="3.12"/>
+        <rect class="cls-1" x="2475.03" y="397.54" width="3.12" height="255.99"/>
+        <rect class="cls-1" x="2636.77" y="650.43" width="3.12" height="264.28"/>
+        <rect class="cls-1" x="2817.32" y="400.66" width="3.12" height="514.04"/>
+        <rect class="cls-1" x="2120.77" y="128.71" width="3.12" height="269.44"/>
+      </g>
+    </g>
+    <rect class="cls-2" x="1.5" y="1.5" width="3048.05" height="1013.12"/>
+  </g>
+</svg>
