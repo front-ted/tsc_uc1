@@ -53,6 +53,7 @@
 }
 .game-body .slot {
     height: auto;
+    min-height: 90px;
     width: 100%;
     background-color: transparent;
     border-width: 3px;
@@ -88,10 +89,12 @@
     border-radius: 10px;
     font-weight: bold;
     max-width: 230px;
-    display: block;
+    display: flex;
     margin: auto;
     z-index: 2;
     position: relative;
+    min-height: 80px;
+    align-items: center;
 }
 .ui-droppable p {
     font-size: 18px;
